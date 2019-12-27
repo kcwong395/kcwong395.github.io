@@ -1,0 +1,17 @@
+.navbar {
+    background-color: #000000 !important;
+}
+
+@media only screen and (max-width: 900px){
+    .navbar {
+        background-color: #000000 !important;
+    }
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
