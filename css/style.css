@@ -1,10 +1,18 @@
-.navbar {
-    background-color: #000000 !important;
+:root {
+    --python-color:  #C1E1DC;   /*  Baby Blue   */
+    --js-color:      #FFCCAC;   /*  Peach       */
+    --java-color:    #FFEB94;   /*  Butter      */
+    --cSharp-color:  #258039;   /*  Avocado     */
+    --cpp-color:     #ED5752;   /*  Raspberry   */
 }
 
-@media only screen and (max-width: 900px){
+.navbar {
+
+}
+
+@media (min-width: @screen-md-min){
     .navbar {
-        background-color: #000000 !important;
+
     }
 }
 
@@ -14,4 +22,27 @@
 
 .nav-link {
     text-transform: uppercase;
+}
+
+.cover{
+    background-image: url(../img/bg_crop.jpg);
+    background-repeat: no-no-repeat;
+
+}
+
+.jumbotron {
+    margin-bottom:0;
+}
+
+.col-project {
+    padding: 15px;
+}
+
+.language-circle {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%
 }
