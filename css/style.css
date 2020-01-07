@@ -6,16 +6,6 @@
     --cpp-color:     #ED5752;   /*  Raspberry   */
 }
 
-.navbar {
-
-}
-
-@media (min-width: @screen-md-min){
-    .navbar {
-
-    }
-}
-
 .navbar-toggler {
     border: none;
 }
@@ -27,11 +17,14 @@
 .cover{
     background-image: url(../img/bg_crop.jpg);
     background-repeat: no-no-repeat;
-
 }
 
 .jumbotron {
     margin-bottom:0;
+}
+
+.card-text {
+    min-height: 50px;
 }
 
 .col-project {
