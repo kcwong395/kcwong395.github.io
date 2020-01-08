@@ -4,13 +4,25 @@
         <title>Martin Personal Website</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- bootstrap -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- end bootstrap -->
+
+        <!-- google font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+        <!-- end google font -->
+
+        <!-- font awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- end font awesome -->
+
         <link rel="stylesheet" href="css/style.css">
     </head>
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" id="navbar">
+    <body data-spy="scroll" data-target=".navbar" data-offset="100">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top font-pf" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="index.html">Martin Wong</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapse-navbar" aria-controls="collapse-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,6 +32,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section-profile">Profile</a></li>
                         <li class="nav-item"><a class="nav-link" href="#section-project">Project</a></li>
                         <li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
                     </ul>
@@ -27,35 +40,215 @@
             </div>
         </nav>
 
-        <section class="jumbotron text-center cover" id="section-home">
-            <h1>My First Bootstrap 4 Page</h1>
-            <p>Resize this responsive page to see the effect!</p>
+        <section class="jumbotron text-center font-pf" id="section-home">
+            <h1>Wong Ka Chung, Martin</h1>
+            <p>Sorry, I can't find the right word</p>
         </section>
+
 
         <section class="jumbotron" id="section-about">
             <div class="container">
-                <h1>About Me</h1>
-                <h3>WONG Ka Chung, Martin</h3>
-                <p>
-                    I am an Undergraduate student in Information Engineering (INFE) at City University of Hong Kong (CityU).<br />
-                    My areas of interest include
-                    <ul>
-                        <li>Cyber Security and Forensics</li>
-                        <li>Software, Mobile Apps and Web Development</li>
-                    </ul>
-                    <a href="WongKaChung_Resume.pdf" target="_blank">Résumé</a> (Last updated: 06 Jan 2019)
-                </p>
+                <div class="text-center font-pf">
+			        <h2 class="p-1">About ME</h2>
+                    <p class="p-1">Still, I am eager to learn</p>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6 text-center mt-auto mb-auto">
+		                <img id="recent_pic" src="img/recent_pic.jpg" alt="recent_pic" width="246" height="246">
+	                </div>
+    	            <div class="col-md-6 p-1">
+    		            <h3 class="font-pf">Wong Ka Chung, Martin</h3>
+                        <p>
+                            I am an Undergraduate student studying Information Engineering (INFE) at City University of Hong Kong (CityU).<br />
+                            <br />
+                            My areas of interest include
+                            <ul>
+                                <li>Cyber Security and Forensics</li>
+                                <li>Software, Apps and Web Development</li>
+                            </ul>
+                            <a href="WongKaChung_Resume.pdf" target="_blank">Résumé</a> (Last updated: 06 Jan 2019)
+                        </p>
+                    </div>
+	            </div>
+
             </div>
+        </section>
+
+        <section class="jumbotron" id="section-profile">
+            <div class="container">
+                <div class="text-center font-pf">
+			        <h2 class="p-1">Profile</h2>
+                    <p class="p-1">Why would you like to stalk me...</p>
+                </div>
+                <hr>
+                <h3 class="font-pf profile-header">EDUCATION</h3>
+                <div>
+	                <div class="row profile-row">
+		                <div class="col-md-4 font-pf">
+			                <h4>City University of Hong Kong</h4>
+			                <p>Aug 2017 - Jul 2021</p>
+                            <i class="fa fa-map-marker"></i> Hong Kong
+		                </div>
+		                <div class="col-md-8">
+			                <p>
+				                <strong class="font-pf">Bachelor of Engineering in Information Engineering</strong><br />
+				                <ul>
+                                    <li class="p-1">GPA: 3.83 / 4.3 (Core: 4.0 / 4.3)</li>
+                                    <li class="p-1">Honors: CENG Mentor Service Award (18/19), Dean's List (Sem A 17/18, 18/19, Sem A 19/20)</li>
+                                    <li class="p-1">Scholarships: Universal P.C.B. Equipment Co., Ltd. Scholarships (18/19), Reaching Out Award (17/18)</li>
+                                    <li class="p-1">Relevant Coursework: Security Technology, Digital Forensics, Java Programming & Applications</li>
+                                </ul>
+			                </p>
+		                </div>
+	                </div>
+
+                    <div class="row profile-row">
+		                <div class="col-md-4 font-pf">
+			                <h4>National Cheng Kung University</h4>
+			                <p>Jul 2018 - Aug 2018</p>
+                            <i class="fa fa-map-marker"></i> Taiwan
+		                </div>
+		                <div class="col-md-8">
+			                <p>
+				                <strong class="font-pf">Summer Exchange - Electrical Engineering and Computer Science Summer Program</strong><br />
+				                <ul>
+                                    <li class="p-1">Relevant Coursework: Java Programming | <a href="https://github.com/kcwong395/Mahjong-Bingo" target="_blank">github</a></li>
+                                </ul>
+			                </p>
+		                </div>
+	                </div>
+
+                </div>
+
+                <hr>
+
+                <h3 class="font-pf profile-header">WORK EXPERIENCE</h3>
+                <div>
+                    <div class="row profile-row">
+                        <div class="col-md-4 font-pf">
+                            <h4>Department of Electrical Engineering, CityU</h4>
+                            <p>Oct 2019 - Present</p>
+                            <i class="fa fa-map-marker"></i> Hong Kong
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                <strong class="font-pf">Part time - Research Assistant, supervised by Dr. Alan K.H. Yeung</strong><br />
+                                <ul>
+                                    <li class="p-1">Developed a Steganography tool in C# that embedded messages into images | <a href="https://github.com/kcwong395/HideNSeek" target="_blank">github</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row profile-row">
+                        <div class="col-md-4 font-pf">
+                            <h4>Institute of Software, Chinese Academy of Sciences</h4>
+                            <p>Jun 2019 - Jul 2019</p>
+                            <i class="fa fa-map-marker"></i> Beijing, China
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                <strong class="font-pf">Summer Internship - Research Intern, supervised by Dr. Libo Zhang , Intelligent Software Research Center</strong><br />
+                                <ul>
+                                    <li class="p-1">Performed data collection, labeling, data-preprocessing and gathered a total of 5k images</li>
+                                    <li class="p-1">Designed a deep hand pose detection model with 98.6% validation accuracy</li>
+                                    <li class="p-1">Extended the developed model to a web-based application | <a href="https://github.com/HANChenfeng/PPHP" target="_blank">github</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+		        </div>
+
+                <hr>
+
+                <h3 class="font-pf profile-header">COMPETITIONS AND CERTIFICATIONS</h3>
+                <div>
+                    <div class="row profile-row">
+                        <div class="col-md-4 font-pf">
+                            <h4>HK CTF Association</h4>
+                            <p>Oct 2019</p>
+                            <i class="fa fa-map-marker"></i> Hong Kong
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                <strong class="font-pf">Finalist - CTF Open 2019 Student Category</strong><br />
+                                <ul>
+                                    <li class="p-1">Member of GRAD501, in charge of Forensics and Miscellaneous Topics</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h3 class="font-pf profile-header">LEADERSHIP AND SERVICES</h3>
+                <div>
+                    <div class="row profile-row">
+                        <div class="col-md-4 font-pf">
+                            <h4>City University of Hong Kong</h4>
+                            <p>Jul 2019 - Present</p>
+                            <i class="fa fa-map-marker"></i> Hong Kong
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                <strong class="font-pf">Organizer of EE Cyber Security Interest Group</strong><br />
+                                <ul>
+                                    <li class="p-1">
+                                        Organized EE Cyber Security Interest Group weekly meetings and prepared teaching materials and handouts.
+                                        Topic includes Modern Cryptography, Hashing, Network Forensics | <a href="https://github.com/kcwong395/CyberSecMaterial" target="_blank">github</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row profile-row">
+                        <div class="col-md-4 font-pf">
+                            <h4>City University of Hong Kong</h4>
+                            <p>Sep 2018 - Apr 2019</p>
+                            <i class="fa fa-map-marker"></i> Hong Kong
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                <strong class="font-pf">Tutor of Peer-Assisted Learning Scheme</strong><br />
+                                <ul>
+                                    <li class="p-1">Organized a small study group in course EE1002, EE1001 (Sem B 18/19)</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row profile-row">
+                        <div class="col-md-4 font-pf">
+                            <h4>City University of Hong Kong</h4>
+                            <p>Jan 2018 - Apr 2018</p>
+                            <i class="fa fa-map-marker"></i> Hong Kong
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                <strong class="font-pf">Volunteer of City-Youth Empowerment Project</strong><br />
+                                <ul>
+                                    <li class="p-1">Took part in a semester-long voluntary scheme and offered extra tutorial classes for the students with multiple
+disabilities in Hong Kong Red Cross Princess Alexandra School</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+	        </div>
         </section>
 
         <section class="jumbotron" id="section-project">
             <div class="container">
-                <h1>Latest Projects</h1>
+                <div class="text-center font-pf">
+			        <h2 class="p-1">Latest Projects</h2>
+                    <p class="p-1">Mom! It's not working!</p>
+                </div>
+                <hr>
                 <div class="row">
                     <div class="col-sm-6 col-project">
-                        <div class="card h-100">
+                        <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">CyberSecMaterial</h5>
+                                <h5 class="card-title font-pf">CyberSecMaterial</h5>
                                 <p class="card-text">A Summary of EE Cyber Security Interest Group Materials.</p>
                                 <span class="language-circle" style="background-color: var(--python-color);"></span> Python
                                 <a href="https://github.com/kcwong395/CyberSecMaterial" class="btn btn-outline-primary btn-sm float-right">Check it out</a>
@@ -64,9 +257,9 @@
                     </div>
 
                     <div class="col-sm-6 col-project">
-                        <div class="card h-100">
+                        <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">HideNSeek</h5>
+                                <h5 class="card-title font-pf">HideNSeek</h5>
                                 <p class="card-text">A steganography tool to hide messages in an image.</p>
                                 <span class="language-circle" style="background-color: var(--cSharp-color);"></span> C#
                                 <a href="https://github.com/kcwong395/HideNSeek" class="btn btn-outline-primary btn-sm float-right">Check it out</a>
@@ -75,9 +268,9 @@
                     </div>
 
                     <div class="col-sm-6 col-project">
-                        <div class="card h-100">
+                        <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">PPHP</h5>
+                                <h5 class="card-title font-pf">PPHP</h5>
                                 <p class="card-text">A web-based game with a hand gesture classifier model embedded.</p>
                                 <span class="language-circle" style="background: linear-gradient(90deg, var(--js-color), var(--python-color));"></span> JavaScript, Python
                                 <a href="https://github.com/HANChenfeng/PPHP" class="btn btn-outline-primary btn-sm float-right">Check it out</a>
@@ -86,9 +279,9 @@
                     </div>
 
                     <div class="col-sm-6 col-project">
-                        <div class="card h-100">
+                        <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Mahjong-Bingo</h5>
+                                <h5 class="card-title font-pf">Mahjong-Bingo</h5>
                                 <p class="card-text">A bingo game in mahjong tiles look.</p>
                                 <span class="language-circle" style="background-color: var(--java-color);"></span> Java
                                 <a href="https://github.com/kcwong395/Mahjong-Bingo" class="btn btn-outline-primary btn-sm float-right">Check it out</a>
@@ -97,9 +290,9 @@
                     </div>
 
                     <div class="col-sm-6 col-project">
-                        <div class="card h-100">
+                        <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">DataStructAndAlgor_Collection</h5>
+                                <h5 class="card-title font-pf">DataStructAndAlgor_Collection</h5>
                                 <p class="card-text">A collection of programming puzzles came accross.</p>
                                 <span class="language-circle" style="background-color: var(--cpp-color);"></span> C++
                                 <a href="https://github.com/kcwong395/DataStructAndAlgor_Collection" class="btn btn-outline-primary btn-sm float-right">Check it out</a>
@@ -111,26 +304,46 @@
             </div>
         </section>
 
-        <section class="jumbotron text-center" id="section-contact">
-            <div>
-                <h2>Looking for Collaboration?</h2>
-                <p>Let me know the idea in your mind...</p>
-            </div>
+        <section class="jumbotron" id="section-contact">
+            <div class="container">
+                <div class="text-center font-pf">
+                    <h2 class="p-1">Looking for Collaboration?</h2>
+                    <p class="p-1">Let me know the idea in your mind...</p>
+                </div>
 
-            <div>
-                <a href="https://github.com/kcwong395" target="_blank" class="btn">         <i class="fa fa-github"></i> GitHub</a>
-                <a href="mailto:kcwong395@gmail.com" class="btn">                           <i class="fa fa-google"></i> Send a mail</a>
-                <a href="https://www.linkedin.com/in/kcwong395" target="_blank" class="btn"><i class="fa fa-linkedin"></i> Linkedin</a>
+                <hr>
+
+                <div class="container d-flex justify-content-around text-center font-pf">
+                    <a href="https://github.com/kcwong395" target="_blank" class="btn">         <i class="fa fa-github"></i>&emsp;GitHub</a>
+                    <a href="mailto:kcwong395@gmail.com" class="btn">                           <i class="fa fa-google"></i>&emsp;Send a mail</a>
+                    <a href="https://www.linkedin.com/in/kcwong395" target="_blank" class="btn"><i class="fa fa-linkedin"></i>&emsp;Linkedin</a>
+                </div>
             </div>
         </section>
 
         <footer class="text-center jumbotron">
-            <p>
-                © 2020 by Wong Ka Chung, Martin
-            </p>
+            <div class="container">
+                <hr>
+                <p class="p-1">© 2020 by Wong Ka Chung, Martin</p>
+            </div>
         </footer>
+
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                // Transition effect for navbar
+                $(window).scroll(function() {
+                    // checks if window is scrolled more than 500px, adds/removes solid class
+                    if($(this).scrollTop() > 500) {
+                        $('.navbar').addClass('solid');
+                    }
+                    else {
+                        $('.navbar').removeClass('solid');
+                    }
+                });
+            });
+        </script>
     </body>
 </html>

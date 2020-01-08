@@ -6,29 +6,91 @@
     --cpp-color:     #ED5752;   /*  Raspberry   */
 }
 
-.navbar-toggler {
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.font-pf {
+    font-family: 'Playfair Display', serif;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.navbar {
+    background-color: transparent !important;
     border: none;
+    padding: 20px 0px;
+    color: #f0f0f0;
+    transition: background-color 1s ease 0s;
 }
 
 .nav-link {
     text-transform: uppercase;
 }
 
-.cover{
+.navbar.solid {
+    background-color: #434242 !important;
+    transition: background-color 1s ease 0s;
+    box-shadow: 0 0 4px grey;
+    color: #C57ED3 !important;
+    transition: color 1s ease 0s;
+}
+
+#section-home h1 {
+    padding-top: 200px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #FFFFFF;
+    border-bottom-color: rgba(255,255,255,0.35);
+    display: inline-block;
+}
+
+#section-home p {
+    padding: 20px 60px;
+}
+
+#section-home {
+    color: #f0f0f0;
     background-image: url(../img/bg_crop.jpg);
     background-repeat: no-no-repeat;
+    background-size: cover;
+    height: 580px;
 }
 
 .jumbotron {
     margin-bottom:0;
+    border-radius: 0 !important;
+}
+
+#recent_pic {
+    border-color: #C1E1DC;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
 }
 
 .card-text {
-    min-height: 50px;
+    min-height: 40px;
+}
+
+@media screen and (max-width: 1195px) {
+    .card-text {
+        min-height: 50px;
+    }
+}
+
+.profile-row {
+    padding: 20px 0px;
+}
+
+.profile-header {
+    padding: 10px 0px;
 }
 
 .col-project {
-    padding: 15px;
+    padding: 10px;
 }
 
 .language-circle {
@@ -37,5 +99,5 @@
     display: inline-block;
     width: 16px;
     height: 16px;
-    border-radius: 50%
+    border-radius: 50%;
 }
