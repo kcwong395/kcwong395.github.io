@@ -362,6 +362,11 @@ disabilities in Hong Kong Red Cross Princess Alexandra School</li>
                         $('.navbar').removeClass('solid');
                     }
                 });
+
+                // auto collapse the menu after click
+                $('.navbar-collapse a').click(function(){
+                    $(".navbar-collapse").collapse('hide');
+                });
             });
         </script>
     </body>
