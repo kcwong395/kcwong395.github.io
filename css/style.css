@@ -22,7 +22,7 @@ ul {
 .navbar {
     background-color: transparent !important;
     border: none;
-    padding: 1rem;
+    padding: 20px 0px;
     color: #f0f0f0;
     transition: background-color 1s ease 0s;
 }
@@ -40,7 +40,7 @@ ul {
 }
 
 #section-home h1 {
-    padding-top: 30vh;
+    padding-top: 15vh;
     padding-bottom: 3vh;
     border-bottom: 1px solid #FFFFFF;
     border-bottom-color: rgba(255,255,255,0.35);
@@ -48,15 +48,15 @@ ul {
 }
 
 #section-home p {
-    padding: 2vh 3vh;
+    padding: 1vh 3vh;
 }
 
 #section-home {
     color: #f0f0f0;
-    background-image: url(../img/bg_crop.jpg);
+    background-image: url(../img/bg.jpg);
     background-repeat: no-no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 60vh;
 }
 
 .jumbotron {
