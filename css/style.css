@@ -56,14 +56,14 @@ ul {
     background-image: url(../img/bg.jpg);
     background-repeat: no-no-repeat;
     background-size: cover;
+    min-height: 100vh;
 }
 
 .jumbotron {
     margin-bottom:0;
     border-radius: 0 !important;
     padding-top: 6rem;
-    padding-bottom: 3rem;
-    min-height: 100vh;
+    padding-bottom: 6rem;
 }
 
 #recent_pic {
