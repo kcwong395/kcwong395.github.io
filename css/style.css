@@ -22,7 +22,7 @@ ul {
 .navbar {
     background-color: transparent !important;
     border: none;
-    padding: 20px 0px;
+    padding: 1rem;
     color: #f0f0f0;
     transition: background-color 1s ease 0s;
 }
@@ -56,7 +56,7 @@ ul {
     background-image: url(../img/bg.jpg);
     background-repeat: no-no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: 70vh;
 }
 
 .jumbotron {
