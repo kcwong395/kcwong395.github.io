@@ -40,15 +40,15 @@ ul {
 }
 
 #section-home h1 {
-    padding-top: 150px;
-    padding-bottom: 20px;
+    padding-top: 20vh;
+    padding-bottom: 2.5vh;
     border-bottom: 1px solid #FFFFFF;
     border-bottom-color: rgba(255,255,255,0.35);
     display: inline-block;
 }
 
 #section-home p {
-    padding: 20px 60px;
+    padding: 2vh 3vh;
 }
 
 #section-home {
@@ -67,9 +67,6 @@ ul {
 }
 
 #recent_pic {
-    border-color: #C1E1DC;
-    border-width: 10px;
-    border-style: solid;
     border-radius: 50%;
 }
 
