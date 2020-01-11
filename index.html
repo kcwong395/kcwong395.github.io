@@ -285,7 +285,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title font-pf">CyberSecMaterial</h5>
-                                <p class="card-text" id="project1">A Summary of EE Cyber Security Interest Group Materials.</p>
+                                <p class="card-text">A Summary of EE Cyber Security Interest Group Materials.</p>
                                 <span class="language-circle" style="background-color: var(--python-color);"></span> Python
                                 <a href="https://github.com/kcwong395/CyberSecMaterial" class="btn btn-outline-primary btn-sm float-right">Check it out</a>
                             </div>
@@ -296,7 +296,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title font-pf">HideNSeek</h5>
-                                <p class="card-text" id="project2">A steganography tool to hide messages in an image.</p>
+                                <p class="card-text">A steganography tool to hide messages in an image.</p>
                                 <span class="language-circle" style="background-color: var(--cSharp-color);"></span> C#
                                 <a href="https://github.com/kcwong395/HideNSeek" class="btn btn-outline-primary btn-sm float-right">Check it out</a>
                             </div>
@@ -307,7 +307,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title font-pf">PPHP</h5>
-                                <p class="card-text" id="project3">A web-based game with a hand gesture classifier model embedded.</p>
+                                <p class="card-text">A web-based game with a hand gesture classifier model embedded.</p>
                                 <span class="language-circle" style="background: linear-gradient(90deg, var(--js-color), var(--python-color));"></span> JavaScript, Python
                                 <a href="https://github.com/HANChenfeng/PPHP" class="btn btn-outline-primary btn-sm float-right">Check it out</a>
                             </div>
@@ -318,7 +318,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title font-pf">Mahjong-Bingo</h5>
-                                <p class="card-text" id="project4">A bingo game in mahjong tiles look.</p>
+                                <p class="card-text">A bingo game in mahjong tiles look.</p>
                                 <span class="language-circle" style="background-color: var(--java-color);"></span> Java
                                 <a href="https://github.com/kcwong395/Mahjong-Bingo" class="btn btn-outline-primary btn-sm float-right">Check it out</a>
                             </div>
@@ -329,7 +329,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title font-pf">DataStructAndAlgor</h5>
-                                <p class="card-text" id="project5">A collection of programming puzzles came accross.</p>
+                                <p class="card-text">A collection of programming puzzles came accross.</p>
                                 <span class="language-circle" style="background-color: var(--cpp-color);"></span> C++
                                 <a href="https://github.com/kcwong395/DataStructAndAlgor_Collection" class="btn btn-outline-primary btn-sm float-right">Check it out</a>
                             </div>
@@ -396,11 +396,17 @@
                     $(".navbar-collapse").collapse('hide');
                 });
 
-                var maxHeight = 0;
-                $('.card-text').each(function (index, value) {
-                    maxHeight = Math.max(maxHeight, $('#project' + (index + 1)).innerHeight());
+                var maxCardHeight = 0;
+                $('.card').each(function (index, value) {
+                    maxCardHeight = Math.max(maxCardHeight, $(this).height());
                 });
-                $('.card-text').innerHeight(maxHeight);
+                $('.card').height(maxCardHeight);
+
+                var maxCardTextHeight = 0;
+                $('.card-text').each(function (index, value) {
+                    maxCardTextHeight = Math.max(maxCardTextHeight, $(this).height());
+                });
+                $('.card-text').height(maxCardTextHeight);
             });
         </script>
     </body>
