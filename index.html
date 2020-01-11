@@ -395,18 +395,6 @@
                 $('.navbar-collapse a').click(function(){
                     $(".navbar-collapse").collapse('hide');
                 });
-
-                var maxCardHeight = 0;
-                $('.card').each(function (index, value) {
-                    maxCardHeight = Math.max(maxCardHeight, $(this).height());
-                });
-                $('.card').height(maxCardHeight);
-
-                var maxCardTextHeight = 0;
-                $('.card-text').each(function (index, value) {
-                    maxCardTextHeight = Math.max(maxCardTextHeight, $(this).height());
-                });
-                $('.card-text').height(maxCardTextHeight);
             });
         </script>
     </body>

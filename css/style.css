@@ -85,7 +85,7 @@ ul {
 }
 
 .period {
-    padding-bottom: 0.3rem;
+    padding-bottom: 0.2rem;
 }
 
 .col-project {
@@ -93,7 +93,19 @@ ul {
 }
 
 .card-text {
-    padding-bottom: 0.5rem;
+    min-height: 75px;
+}
+
+@media screen and (min-width: 576px) {
+    .card-text {
+        min-height: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card-text {
+        min-height: 50px;
+    }
 }
 
 .language-circle {
