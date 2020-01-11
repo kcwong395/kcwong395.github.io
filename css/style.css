@@ -76,22 +76,16 @@ ul {
     border-radius: 50%;
 }
 
-.card-text {
-    min-height: 40px;
-}
-
-@media screen and (max-width: 1195px) {
-    .card-text {
-        min-height: 50px;
-    }
-}
-
 .row {
     padding: 20px 0px;
 }
 
 .header {
-    padding: 20px 0px 10px 0px;
+    padding-bottom: 0.5rem;
+}
+
+.period {
+    padding-bottom: 0.5rem;
 }
 
 .col-project {
@@ -107,8 +101,6 @@ ul {
     border-radius: 50%;
 }
 
-@media screen and (min-width: 576px) {
-    .fa-github, .fa-linkedin, .fa-google {
-        padding-right: 10px;
-    }
-)
+.fa-github, .fa-linkedin, .fa-google {
+    padding: 10px;
+}
