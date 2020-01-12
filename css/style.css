@@ -104,9 +104,13 @@ ul {
     }
 }
 
+.font-sm, .font-sm .btn {
+    font-size: 14px;
+}
+
 .language-circle {
     position: relative;
-    top: 2px;
+    top: 3px;
     display: inline-block;
     width: 16px;
     height: 16px;
