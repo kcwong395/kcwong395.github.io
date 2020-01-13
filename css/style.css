@@ -6,8 +6,17 @@
     --cpp-color:     #ED5752;   /*  Raspberry   */
 }
 
+@font-face {
+  font-family: wild-font;
+  src: url(../font/somethingwild-Regular.otf);
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+.font-wd {
+    font-family: wild-font, serif;
 }
 
 .font-pf {
@@ -41,15 +50,16 @@ ul {
 }
 
 #section-home h1 {
-    padding-top: 25vh;
-    padding-bottom: 3vh;
+    padding-top: 20vh;
+    padding-bottom: 2vh;
     border-bottom: 1px solid #FFFFFF;
     border-bottom-color: rgba(255,255,255,0.35);
     display: inline-block;
+    font-size: 10vh;
 }
 
 #section-home h5 {
-    padding: 1vh 3vh;
+    font-size: 6vh;
 }
 
 #section-home {
