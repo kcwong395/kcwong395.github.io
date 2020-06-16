@@ -1,0 +1,16 @@
+.navbar {
+    background-color: transparent !important;
+    border: none;
+    padding: 1rem 2rem;
+    color: #f0f0f0;
+    transition: background-color 1s ease 0s;
+    font-size: 18px;
+}
+
+.navbar.solid {
+    background-color: #434242 !important;
+    transition: background-color 1s ease 0s;
+    box-shadow: 0 0 4px grey;
+    color: #C57ED3 !important;
+    transition: color 1s ease 0s;
+}

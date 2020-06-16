@@ -1,0 +1,26 @@
+  
+  #section-home h1 {
+    padding-top: 20vh;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid #FFFFFF;
+    border-bottom-color: rgba(255,255,255,0.35);
+    display: inline-block;
+    font-size: 10vh;
+  }
+  
+  #section-home h5 {
+    font-size: 6vh;
+  }
+  
+  #section-home {
+    color: #f0f0f0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../../img/bg.jpg);
+    background-repeat: no-no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  }
