@@ -10,17 +10,29 @@ import ContactItem from "./ContactItem.js"
 
 function Contact() {
     return (
-        <Jumbotron id="section-contact" style={{ backgroundColor: "#C1E1DC" }}>
+        <Jumbotron id="section-contact" style={{ backgroundColor: "#e9ecef" }}>
             <Container>
                 <PageHeader
                     header="Looking for Collaboration?"
                     subHeader="Let me know the idea in your mind..."
                 />
-                <Container>
+                <Container className="text-center font-pf">
                     <Row>
-                        <ContactItem />
-                        <ContactItem />
-                        <ContactItem />
+                        <ContactItem 
+                            link="https://github.com/kcwong395"
+                            icon="fa-github"
+                            content="Github"
+                        />
+                        <ContactItem
+                            link="mailto:kcwong395@gmail.com"
+                            icon="fa-google"
+                            content="Email" 
+                        />
+                        <ContactItem 
+                            link="https://www.linkedin.com/in/kcwong395"
+                            icon="fa-linkedin"
+                            content="Linkedin" 
+                        />
                     </Row>
                 </Container>
             </Container>

@@ -1,7 +1,5 @@
 import React from "react"
 
-import Row from "react-bootstrap/Row"
-
 import ProfileItem from "./ProfileItem.js"
 
 function ProfileSection(props) {
@@ -14,6 +12,7 @@ function ProfileSection(props) {
                     content={item.content} 
                 />
             )}
+            <hr />
         </div>
     )
 }

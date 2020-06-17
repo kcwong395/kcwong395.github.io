@@ -49,5 +49,31 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- scrolling spy -->
+    <script>
+        $(document).ready(function() {
+            // Transition effect for navbar
+            $(window).scroll(function() {
+                // checks if window is scrolled more than 500px, adds/removes solid class
+                if($(this).scrollTop() > 500) {
+                    $('.navbar').addClass('solid');
+                }
+                else {
+                    $('.navbar').removeClass('solid');
+                }
+            });
+
+            // auto collapse the menu after click
+            $('.navbar-collapse a').click(function(){
+                $(".navbar-collapse").collapse('hide');
+            });
+        });
+    </script>
   </body>
 </html>

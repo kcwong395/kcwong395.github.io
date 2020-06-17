@@ -2,11 +2,11 @@ import React from "react"
 
 import Col from "react-bootstrap/Col"
 
-function ContactItem() {
+function ContactItem(props) {
     return (
         <Col lg={4} xs={12} className="font-pf">
-            <a href="https://github.com/kcwong395" target="_blank" class="btn">
-                <i class="fa fa-github fa-2x"></i>GitHub
+            <a href={props.link} target="_blank" class="btn">
+                <i className={"fa fa-2x " + props.icon} ></i>{props.content}
             </a>
         </Col>
     )

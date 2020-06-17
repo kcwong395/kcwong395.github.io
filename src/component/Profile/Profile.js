@@ -120,7 +120,7 @@ function Profile() {
                         {
                             metaInfo:
                             {
-                                organization: "Campus Services, Department of Electrical Engineering, CityU",
+                                organization: "Department of Electrical Engineering, CityU",
                                 period: "Sep 2018 - Present",
                                 location: " Hong Kong"
                             },
@@ -137,7 +137,7 @@ function Profile() {
                         {
                             metaInfo:
                             {
-                                organization: "Community Services, Hong Kong Red Cross Princess Alexandra School",
+                                organization: "Hong Kong Red Cross Princess Alexandra School",
                                 period: "Jan 2018 - Apr 2018",
                                 location: " Hong Kong"
                             },
