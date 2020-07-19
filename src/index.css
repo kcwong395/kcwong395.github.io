@@ -31,8 +31,8 @@
   .jumbotron {
     margin-bottom:0 !important;
     border-radius: 0 !important;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
   }
   
   #recent_pic {
