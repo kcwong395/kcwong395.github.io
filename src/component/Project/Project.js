@@ -11,7 +11,7 @@ import project from "../../assets/project.json"
 
 function Project() {
     return (
-        <Jumbotron id="section-contact" style={{ backgroundColor: "#FFFB94" }}>
+        <Jumbotron id="section-project" style={{ backgroundColor: "#FFFB94" }}>
             <Container>
                 <PageHeader
                     header="Latest Projects"
