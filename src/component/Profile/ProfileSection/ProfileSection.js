@@ -6,10 +6,10 @@ function ProfileSection(props) {
     return (
         <div>
             <h3 className="font-pf item">{props.info.header}</h3>
-            {props.info.items.map(item => 
+            {props.info.items.slice(0, 3).map(item =>
                 <ProfileItem
                     metaInfo={item.metaInfo}
-                    content={item.content} 
+                    content={item.content}
                 />
             )}
             <hr />

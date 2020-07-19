@@ -1,11 +1,13 @@
 import React from "react"
 import NewsItem from "./NewsItem"
 
+import news from "../../../assets/news.json"
+
 function NewsSection() {
-    return (  
+    return (
         <div>
             <h3 className="header font-pf">Latest News</h3>
-            <NewsItem content="Martin will be one of the course tutors in EE2331 - Data Structures and Algorithms in the upcoming semester (Sem B 19/20)" />
+            {news.slice(0, 3).map(item => <NewsItem props={item} />)}
         </div>
     )
 }

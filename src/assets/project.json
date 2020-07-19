@@ -1,0 +1,37 @@
+[
+    {
+        "title": "CyberSecMaterial",
+        "text": "A Summary of EE Cyber Security Interest Group Materials.",
+        "link": "https://github.com/kcwong395/CyberSecMaterial",
+        "lang": "Pyhton",
+        "langColor": "#C1E1DC"
+    },
+    {
+        "title": "HideNSeek",
+        "text": "A steganography tool to hide messages in an image.",
+        "link": "https://github.com/kcwong395/HideNSeek",
+        "lang": "C#",
+        "langColor": "#258039"
+    },
+    {
+        "title": "PPHP",
+        "text": "A web-based game with a hand gesture classifier model embedded.",
+        "link": "https://github.com/HANChenfeng/PPHP",
+        "lang": "Python",
+        "langColor": "#C1E1DC"
+    },
+    {
+        "title": "Mahjong-Bingo",
+        "text": "A bingo game in mahjong tiles look.",
+        "link": "https://github.com/kcwong395/Mahjong-Bingo",
+        "lang": "Java",
+        "langColor": "#FFEB94"
+    },
+    {
+        "title": "DataStructAndAlgor",
+        "text": "A collection of programming puzzles came accross.",
+        "link": "https://github.com/kcwong395/DataStructAndAlgor_Collection",
+        "lang": "C++",
+        "langColor": "#ED5752"
+    }
+]
