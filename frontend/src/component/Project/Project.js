@@ -6,10 +6,22 @@ import Row from "react-bootstrap/Row"
 
 import PageHeader from "../PageHeader.js"
 import ProjectItem from "./ProjectItem.js"
+import { getProjects } from "../../apis/apis.js"
 
-import project from "../../assets/project.json"
+import { useState } from 'react'
 
 function Project() {
+
+    const [projectItems, setProjectItems] = useState([])
+    fetch("http://localhost:8080/projects")
+    .then(res => res.json())
+    .then((result) => {
+        setProjectItems(result)
+    },
+    (err) => {
+        console.log(err)
+    })
+
     return (
         <Jumbotron id="section-project" style={{ backgroundColor: "#FFFB94" }}>
             <Container>
@@ -18,7 +30,7 @@ function Project() {
                     subHeader="Mom! It's not working!"
                 />
                 <Row>
-                    {project.slice(0, 6).map(projectItem => <ProjectItem info={projectItem} />)}
+                    {projectItems.slice(0, 6).map(projectItem => <ProjectItem info={projectItem} />)}
                 </Row>
             </Container>
         </Jumbotron>
