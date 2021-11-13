@@ -11,7 +11,6 @@ export default function Banner() {
       </Typography>
       <Typography variant="h4" component="div" sx={{ color: (theme) => `${theme.palette.primary.main}` }}>
         Software Engineer
-        <br />
       </Typography>
       <Typography variant="body1" component="div">
         Aspiring recent graduate seeking for challenges in <i>large-scale system design</i>
