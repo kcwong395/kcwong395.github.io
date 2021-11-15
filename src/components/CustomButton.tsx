@@ -19,6 +19,13 @@ export default function CustomButton(props: {
   const classes = useStyles();
 
   return (
-    <Button variant="contained" size="large" className={classes.btn}>{props.text}</Button>
+    <Button
+      href="#about"
+      variant="contained"
+      size="large"
+      className={classes.btn}
+    >
+      {props.text}
+    </Button>
   )
 }
