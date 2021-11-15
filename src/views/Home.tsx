@@ -13,9 +13,11 @@ function Home() {
       <Grid item>
         <Navbar />
       </Grid>
-      <Grid container justifyContent="flex-end" alignItems="center">
-        <Grid item sx={{ pr: 40, pb: 20 }}>
-          <Banner />
+      <Grid item>
+        <Grid container justifyContent="flex-end" alignItems="center">
+          <Grid item sx={{ pr: 40, pb: 20 }}>
+            <Banner />
+          </Grid>
         </Grid>
       </Grid>
       <Grid item sx={{ pl: 7, pb: 4 }}>
