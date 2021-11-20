@@ -3,6 +3,7 @@ import './App.css';
 import Home from './views/Home'
 import {createTheme, ThemeProvider} from '@mui/material/styles';
 import {CssBaseline} from '@mui/material'
+import Copyright from "./views/Copyright";
 
 const theme = createTheme({
   typography: {
@@ -33,7 +34,10 @@ const theme = createTheme({
     secondary: {
       main: "#514644"
     },
-    mode: "dark"
+    mode: "dark",
+    action: {
+      active: "#efc8b1",
+    },
   }
 });
 
@@ -42,6 +46,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Home />
+      <Copyright />
     </ ThemeProvider>
   );
 }
