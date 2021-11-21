@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar'
 import ContactBar from '../components/contact/ContactBar'
 import Banner from '../components/Banner'
 
-function Home() {
+export default function Home() {
   return (
     <Grid container direction="column" justifyContent="space-between" id={'Section-Home'}>
       <Grid item>
@@ -26,5 +26,3 @@ function Home() {
     </Grid>
   );
 }
-
-export default Home;
