@@ -19,6 +19,5 @@ export default function Banner() {
         <CustomButton text="Read More" />
       </Stack>
     </Grow>
-
   );
 }
