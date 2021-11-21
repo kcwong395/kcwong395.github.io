@@ -7,11 +7,10 @@ import {Divider, Grid, Link, Stack} from "@mui/material";
 export default function Navbar() {
   return (
     <AppBar
-      position="absolute"
+      position="fixed"
       color="default"
       elevation={0}
       sx={{
-        position: 'relative',
         borderBottom: (theme) => `1px solid ${theme.palette.divider}`,
         backgroundColor: "rgba(0, 0, 0, 0)",
         fontWeight: 700
