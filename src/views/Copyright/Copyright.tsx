@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link, Stack, Typography} from "@mui/material";
 
-import ContactBar from '../components/contact/ContactBar';
+import ContactBar from '../../components/contact/ContactBar';
 
 export default function Copyright(props: any) {
   return (
@@ -16,6 +16,5 @@ export default function Copyright(props: any) {
         {'.'}
       </Typography>
     </Stack>
-
   );
 }
