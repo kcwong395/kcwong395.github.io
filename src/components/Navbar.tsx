@@ -21,17 +21,17 @@ export default function Navbar() {
           <Grid item xs={5}>
             <Grid container justifyContent="space-evenly">
               <Typography variant="h5" component="div">
-                <Link href="#" color="inherit" underline="none" sx={{ my: 3 }}>Martin Wong</Link>
+                <Link href="#" color="white" underline="none" sx={{ my: 3 }}>Martin Wong</Link>
               </Typography>
             </Grid>
           </Grid>
           <Grid item xs={2} />
           <Grid item xs={5}>
             <Stack direction="row" divider={<Divider orientation="vertical" flexItem />} spacing={{ xs: 4 }}>
-              <Link href="#" color="inherit" underline="none">HOME</Link>
-              <Link href="#about" color="inherit" underline="none">ABOUT ME</Link>
-              <Link href="#profile" color="inherit" underline="none">PROFILE</Link>
-              <Link href="#project" color="inherit" underline="none">PROJECTS</Link>
+              <Link href="#" color="white" underline="none">HOME</Link>
+              <Link href="#about" color="white" underline="none">ABOUT ME</Link>
+              <Link href="#profile" color="white" underline="none">PROFILE</Link>
+              <Link href="#project" color="white" underline="none">PROJECTS</Link>
             </Stack>
           </Grid>
         </Grid>
