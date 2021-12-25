@@ -5,6 +5,7 @@ import {createTheme, ThemeProvider} from '@mui/material/styles';
 import {CssBaseline} from '@mui/material'
 import Copyright from "./views/Copyright/Copyright";
 import About from "./views/About/About";
+import Navbar from "./components/Navbar";
 
 const theme = createTheme({
   typography: {
@@ -46,6 +47,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <Navbar />
       <Home />
       <About />
       <Copyright />
