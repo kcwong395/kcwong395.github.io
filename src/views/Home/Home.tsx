@@ -3,19 +3,17 @@ import {Grid} from "@mui/material"
 
 import './Home.css'
 
-import Navbar from '../../components/Navbar'
 import ContactBar from '../../components/contact/ContactBar'
 import Banner from '../../components/Banner'
 
 export default function Home() {
   return (
-    <Grid container direction="column" justifyContent="space-between" id={'Section-Home'}>
+    <Grid container direction="column" justifyContent="space-between" id={'Section-Home'} sx={{minHeight: "100vh"}}>
+      <Grid item></Grid>
       <Grid item>
-        <Navbar />
-      </Grid>
-      <Grid item>
-        <Grid container justifyContent="flex-end" alignItems="center">
-          <Grid item sx={{ pr: 40, pb: 20 }}>
+        <Grid container>
+          <Grid item xs={6} />
+          <Grid item xs={6} sx={{ pl: 10 }}>
             <Banner />
           </Grid>
         </Grid>
