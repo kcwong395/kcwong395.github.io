@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Home from './views/Home'
+import Home from './views/Home/Home'
 import {createTheme, ThemeProvider} from '@mui/material/styles';
 import {CssBaseline} from '@mui/material'
-import Copyright from "./views/Copyright";
-import About from "./views/About";
+import Copyright from "./views/Copyright/Copyright";
+import About from "./views/About/About";
 
 const theme = createTheme({
   typography: {
@@ -35,10 +35,10 @@ const theme = createTheme({
     secondary: {
       main: "#514644"
     },
-    mode: "dark",
+    mode: "light",
     action: {
       active: "#efc8b1",
-    },
+    }
   }
 });
 
