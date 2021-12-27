@@ -14,13 +14,14 @@ const useStyles = makeStyles(({
 
 export default function CustomButton(props: {
   text: string;
+  href: string;
 }) {
 
   const classes = useStyles();
 
   return (
     <Button
-      href="#about"
+      href={props.href}
       variant="contained"
       size="large"
       className={classes.btn}
