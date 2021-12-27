@@ -3,6 +3,9 @@ import React from 'react';
 import './About.css';
 import {Box, Container, Divider, Grid, ImageListItem, Stack, Typography, Chip} from "@mui/material";
 import icon from '../../static/recent_pic.jpg';
+
+// @ts-ignore
+import resume from '../../static/MartinWong_Resume.pdf';
 import CustomButton from '../../components/CustomButton';
 
 export default function About() {
@@ -47,24 +50,21 @@ export default function About() {
             to work with teams having excellent practises such as TDD, Agile Methodology and high code review standard.
           </Typography>
           <Typography variant="body1" component="div">
-            Web Technology | <Chip label="React.js" variant="outlined" /> <Chip label="Vue.js" variant="outlined" /> <Chip label="Ajax" variant="outlined" />
+            Frontend Design | <Chip label="React.js" variant="outlined" /> <Chip label="Vue.js" variant="outlined" /> <Chip label="Restful APIs" variant="outlined" /> <Chip label="Postman" variant="outlined" />
           </Typography>
           <Typography variant="body1" component="div">
-            Backend Development | <Chip label="Java" variant="outlined" /> <Chip label="SpringBoot" variant="outlined" /> <Chip label="Python" variant="outlined" /> <Chip label="Flask" variant="outlined" />
+            Backend Development | <Chip label="Java" variant="outlined" /> <Chip label="SpringBoot" variant="outlined" /> <Chip label="JUnit" variant="outlined" /> <Chip label="Python" variant="outlined" /> <Chip label="Flask" variant="outlined" />
           </Typography>
           <Typography variant="body1" component="div">
             Database Management | <Chip label="Postgresql" variant="outlined" /> <Chip label="MSsql" variant="outlined" /> <Chip label="Mongodb" variant="outlined" /> <Chip label="Redis" variant="outlined" />
           </Typography>
           <Typography variant="body1" component="div">
-            Infrastructure & CI/CD | <Chip label="Terraform" variant="outlined" /> <Chip label="Docker" variant="outlined" /> <Chip label="AWS" variant="outlined" /> <Chip label="Azure" variant="outlined" />
-          </Typography>
-          <Typography variant="body1" component="div">
-            Software Testing | <Chip label="Junit" variant="outlined" /> <Chip label="Postman" variant="outlined" />
+            Infrastructure & CI/CD | <Chip label="Terraform" variant="outlined" /> <Chip label="Docker" variant="outlined" /> <Chip label="AWS" variant="outlined" /> <Chip label="Azure" variant="outlined" /> <Chip label="CircleCI" variant="outlined" />
           </Typography>
           <Typography variant="body1" component="div">
             Language | <Chip label="Cantonese (Native)" variant="outlined" /> <Chip label="English (IELTS: 7.5)" variant="outlined" /> <Chip label="Mandarin (Fluent)" variant="outlined" />
           </Typography>
-        <CustomButton text="Download CV" />
+        <CustomButton text="Download CV" href={resume} />
         </Stack>
       </Stack>
     </Box>
