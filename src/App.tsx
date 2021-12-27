@@ -1,11 +1,19 @@
 import React from 'react';
-import './App.css';
-import Home from './views/Home/Home'
+
 import {createTheme, ThemeProvider} from '@mui/material/styles';
-import {CssBaseline} from '@mui/material'
-import Copyright from "./views/Copyright/Copyright";
-import About from "./views/About/About";
+import {CssBaseline, Fab} from '@mui/material'
+
+// import views
 import Navbar from "./components/Navbar";
+import Home from './views/Home/Home'
+import About from "./views/About/About";
+import Profile from './views/Profile/Profile';
+import Copyright from "./views/Copyright/Copyright";
+
+import './App.css';
+import ScrollTop from './components/ScrollTop';
+
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 const theme = createTheme({
   typography: {
@@ -43,14 +51,31 @@ const theme = createTheme({
   }
 });
 
-function App() {
+interface Props {
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
+  window?: () => Window;
+  children: React.ReactElement;
+}
+
+function App(props: Props) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Navbar />
       <Home />
       <About />
+      <Profile />
       <Copyright />
+      <ScrollTop {...props}>
+        <a href="#">
+          <Fab color="secondary" size="small" aria-label="scroll back to top">
+            <KeyboardArrowUpIcon />
+          </Fab>
+        </a>
+      </ScrollTop>
     </ThemeProvider>
   );
 }
