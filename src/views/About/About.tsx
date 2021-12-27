@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './About.css';
 import {Box, Container, Divider, Grid, ImageListItem, Stack, Typography, Chip} from "@mui/material";
 import icon from '../../static/recent_pic.jpg';
 
@@ -12,15 +11,14 @@ export default function About() {
   return (
     <Box className={"Section-About"} id={'about'}
           sx={{
-            minHeight: "100vh",
             background: (theme) =>
               `linear-gradient(to right, 
-              ${theme.palette.primary.main} 0%, ${theme.palette.primary.main} 40%, 
+              ${theme.palette.secondary.main} 0%, ${theme.palette.secondary.main} 40%, 
               ${theme.palette.background.paper} 40%, ${theme.palette.background.paper} 100%)`
           }}>
       <Stack
         direction={{xs: "column", lg: "row"}}
-        spacing={12}
+        spacing={10}
         sx={{minHeight: "100vh", minWidth: "100vh"}}
         alignItems="center"
         justifyContent="center"
@@ -36,7 +34,7 @@ export default function About() {
             loading="lazy"
           />
         </ImageListItem>
-        <Stack direction="column" spacing={{ xs: 2 }} sx={{maxWidth: "65vh"}}>
+        <Stack direction="column" spacing={{ xs: 2 }} sx={{maxWidth: "60vh"}}>
           <Typography variant="h4" component="div">
             Martin WONG
           </Typography>
@@ -49,21 +47,51 @@ export default function About() {
             Currently open to any coding-oriented opportunities and
             to work with teams having excellent practises such as TDD, Agile Methodology and high code review standard.
           </Typography>
-          <Typography variant="body1" component="div">
-            Frontend Design | <Chip label="React.js" variant="outlined" /> <Chip label="Vue.js" variant="outlined" /> <Chip label="Restful APIs" variant="outlined" /> <Chip label="Postman" variant="outlined" />
-          </Typography>
-          <Typography variant="body1" component="div">
-            Backend Development | <Chip label="Java" variant="outlined" /> <Chip label="SpringBoot" variant="outlined" /> <Chip label="JUnit" variant="outlined" /> <Chip label="Python" variant="outlined" /> <Chip label="Flask" variant="outlined" />
-          </Typography>
-          <Typography variant="body1" component="div">
-            Database Management | <Chip label="Postgresql" variant="outlined" /> <Chip label="MSsql" variant="outlined" /> <Chip label="Mongodb" variant="outlined" /> <Chip label="Redis" variant="outlined" />
-          </Typography>
-          <Typography variant="body1" component="div">
-            Infrastructure & CI/CD | <Chip label="Terraform" variant="outlined" /> <Chip label="Docker" variant="outlined" /> <Chip label="AWS" variant="outlined" /> <Chip label="Azure" variant="outlined" /> <Chip label="CircleCI" variant="outlined" />
-          </Typography>
-          <Typography variant="body1" component="div">
-            Language | <Chip label="Cantonese (Native)" variant="outlined" /> <Chip label="English (IELTS: 7.5)" variant="outlined" /> <Chip label="Mandarin (Fluent)" variant="outlined" />
-          </Typography>
+          <Stack direction="row" spacing={{ xs: 2 }}>
+            <Typography variant="body1" component="div" sx={{minWidth: "175px"}}>
+              Frontend Design
+            </Typography>
+            <Divider orientation="vertical" flexItem />
+            <Typography variant="body1" component="div">
+              <Chip label="React.js" variant="outlined" /> <Chip label="Vue.js" variant="outlined" /> <Chip label="Restful APIs" variant="outlined" /> <Chip label="Postman" variant="outlined" />
+            </Typography>
+          </Stack>
+          <Stack direction="row" spacing={{ xs: 2 }}>
+            <Typography variant="body1" component="div" sx={{minWidth: "175px"}}>
+              Backend Development
+            </Typography>
+            <Divider orientation="vertical" flexItem />
+            <Typography variant="body1" component="div">
+              <Chip label="Java" variant="outlined" /> <Chip label="SpringBoot" variant="outlined" /> <Chip label="JUnit" variant="outlined" /> <Chip label="Python" variant="outlined" /> <Chip label="Flask" variant="outlined" />
+            </Typography>
+          </Stack>
+          <Stack direction="row" spacing={{ xs: 2 }}>
+            <Typography variant="body1" component="div" sx={{minWidth: "175px"}}>
+              Database Management
+            </Typography>
+            <Divider orientation="vertical" flexItem />
+            <Typography variant="body1" component="div">
+              <Chip label="Postgresql" variant="outlined" /> <Chip label="MSsql" variant="outlined" /> <Chip label="Mongodb" variant="outlined" /> <Chip label="Redis" variant="outlined" />
+            </Typography>
+          </Stack>
+          <Stack direction="row" spacing={{ xs: 2 }}>
+            <Typography variant="body1" component="div" sx={{minWidth: "175px"}}>
+              Infrastructure & CI/CD
+            </Typography>
+            <Divider orientation="vertical" flexItem />
+            <Typography variant="body1" component="div">
+              <Chip label="Terraform" variant="outlined" /> <Chip label="Docker" variant="outlined" /> <Chip label="AWS" variant="outlined" /> <Chip label="Azure" variant="outlined" />
+            </Typography>
+          </Stack>
+          <Stack direction="row" spacing={{ xs: 2 }}>
+            <Typography variant="body1" component="div" sx={{minWidth: "175px"}}>
+              Language
+            </Typography>
+            <Divider orientation="vertical" flexItem />
+            <Typography variant="body1" component="div">
+              <Chip label="Cantonese" variant="outlined" /> <Chip label="English (IELTS: 7.5)" variant="outlined" /> <Chip label="Mandarin" variant="outlined" />
+            </Typography>
+          </Stack>
         <CustomButton text="Download CV" href={resume} />
         </Stack>
       </Stack>
