@@ -51,16 +51,7 @@ const theme = createTheme({
   }
 });
 
-interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window?: () => Window;
-  children: React.ReactElement;
-}
-
-function App(props: Props) {
+function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -69,13 +60,7 @@ function App(props: Props) {
       <About />
       <Profile />
       <Copyright />
-      <ScrollTop {...props}>
-        <a href="#">
-          <Fab color="secondary" size="small" aria-label="scroll back to top">
-            <KeyboardArrowUpIcon />
-          </Fab>
-        </a>
-      </ScrollTop>
+      <ScrollTop />
     </ThemeProvider>
   );
 }
