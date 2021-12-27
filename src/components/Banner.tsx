@@ -18,7 +18,7 @@ export default function Banner() {
         <Typography variant="body1" component="div">
           Aspiring recent graduate seeking for challenges in <strong><i><Typing /></i></strong>
         </Typography>
-        <CustomButton text="Read More" />
+        <CustomButton text="Read More" href="#about" />
       </Stack>
     </Grow>
   );
