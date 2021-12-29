@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Box, Container, Divider, Grid, ImageListItem, Stack, Typography, Chip} from "@mui/material";
+import {Box, Divider, ImageListItem, Stack, Typography, Chip} from "@mui/material";
 import icon from '../../static/recent_pic.jpg';
 
 // @ts-ignore
@@ -9,7 +9,7 @@ import CustomButton from '../../components/CustomButton';
 
 export default function About() {
   return (
-    <Box className={"Section-About"} id={'about'}
+    <Box id={'about'}
           sx={{
             background: (theme) =>
               `linear-gradient(to right, 
@@ -43,7 +43,6 @@ export default function About() {
           </Typography>
           <Typography variant="body1" component="div">
             Recent Graduate with strong academic background, exposure in banking industry and large MNC.
-            I am comfortable with coding in Java, Python, Go.
             Currently open to any coding-oriented opportunities and
             to work with teams having excellent practises such as TDD, Agile Methodology and high code review standard.
           </Typography>

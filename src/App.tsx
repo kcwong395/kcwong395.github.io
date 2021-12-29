@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {createTheme, ThemeProvider} from '@mui/material/styles';
-import {CssBaseline, Fab} from '@mui/material'
+import {CssBaseline} from '@mui/material'
 
 // import views
 import Navbar from "./components/Navbar";
@@ -13,7 +13,6 @@ import Copyright from "./views/Copyright/Copyright";
 import './App.css';
 import ScrollTop from './components/ScrollTop';
 
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 const theme = createTheme({
   typography: {
