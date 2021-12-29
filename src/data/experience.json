@@ -1,0 +1,32 @@
+[
+  {
+    "organization": "Societe Generale",
+    "period": "2021.09 - Present",
+    "location": "Hong Kong",
+    "header": "Software Engineer, Analyst | Compliance IT",
+    "info": [
+      "Developed digitalization projects including web portal and raw data processing [Python, Flask]",
+      "Maintained Trade Surveillance project including BAU, system upgrade [Spring Boot, Postgresql]"
+    ]
+  },
+  {
+    "organization": "Macroview Telecom Limited",
+    "period": "2020.09 - 2021.04",
+    "location": "Hong Kong",
+    "header": "System Engineer Trainee | Managed Digital Services",
+    "info": [
+      "Developed Ansible scripts and Jira workflows for automation in user requests [Ansible, AWX, Jira]",
+      "Collected application matrices for health check and performance visualization [Elastic Search, Grafana]"
+    ]
+  },
+  {
+    "organization": "Orient Overseas Container Line",
+    "period": "2020.06 - 2020.08",
+    "location": "Hong Kong",
+    "header": "Intern in Infrastructure Team | Information Services Department",
+    "info": [
+      "Implemented solutions to meet business needs and smoothened the daily operations [O365, Azure]",
+      "Developed and deployed PowerShell scripts to conduct tasks on 50+ remote servers [Powershell]"
+    ]
+  }
+]
