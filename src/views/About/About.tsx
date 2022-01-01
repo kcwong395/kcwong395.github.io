@@ -3,9 +3,12 @@ import React from 'react';
 import {Box, Divider, ImageListItem, Stack, Typography, Chip} from "@mui/material";
 import icon from '../../static/recent_pic.jpg';
 
+import CustomButton from '../../components/CustomButton';
+import SkillItem from '../../components/skill/SkillItem';
+
 // @ts-ignore
 import resume from '../../static/MartinWong_Resume.pdf';
-import CustomButton from '../../components/CustomButton';
+import skill from '../../data/skill.json';
 
 export default function About() {
   return (
@@ -46,51 +49,13 @@ export default function About() {
             Currently open to any coding-oriented opportunities and
             to work with teams having excellent practises such as TDD, Agile Methodology and high code review standard.
           </Typography>
-          <Stack direction="row" spacing={{ xs: 2 }}>
-            <Typography variant="body1" component="div" sx={{minWidth: "175px"}}>
-              Frontend Design
-            </Typography>
-            <Divider orientation="vertical" flexItem />
-            <Typography variant="body1" component="div">
-              <Chip label="React.js" variant="outlined" /> <Chip label="Vue.js" variant="outlined" /> <Chip label="Restful APIs" variant="outlined" /> <Chip label="Postman" variant="outlined" />
-            </Typography>
-          </Stack>
-          <Stack direction="row" spacing={{ xs: 2 }}>
-            <Typography variant="body1" component="div" sx={{minWidth: "175px"}}>
-              Backend Development
-            </Typography>
-            <Divider orientation="vertical" flexItem />
-            <Typography variant="body1" component="div">
-              <Chip label="Java" variant="outlined" /> <Chip label="SpringBoot" variant="outlined" /> <Chip label="JUnit" variant="outlined" /> <Chip label="Python" variant="outlined" /> <Chip label="Flask" variant="outlined" />
-            </Typography>
-          </Stack>
-          <Stack direction="row" spacing={{ xs: 2 }}>
-            <Typography variant="body1" component="div" sx={{minWidth: "175px"}}>
-              Database Management
-            </Typography>
-            <Divider orientation="vertical" flexItem />
-            <Typography variant="body1" component="div">
-              <Chip label="Postgresql" variant="outlined" /> <Chip label="MSsql" variant="outlined" /> <Chip label="Mongodb" variant="outlined" /> <Chip label="Redis" variant="outlined" />
-            </Typography>
-          </Stack>
-          <Stack direction="row" spacing={{ xs: 2 }}>
-            <Typography variant="body1" component="div" sx={{minWidth: "175px"}}>
-              Infrastructure & CI/CD
-            </Typography>
-            <Divider orientation="vertical" flexItem />
-            <Typography variant="body1" component="div">
-              <Chip label="Terraform" variant="outlined" /> <Chip label="Docker" variant="outlined" /> <Chip label="AWS" variant="outlined" /> <Chip label="Azure" variant="outlined" />
-            </Typography>
-          </Stack>
-          <Stack direction="row" spacing={{ xs: 2 }}>
-            <Typography variant="body1" component="div" sx={{minWidth: "175px"}}>
-              Language
-            </Typography>
-            <Divider orientation="vertical" flexItem />
-            <Typography variant="body1" component="div">
-              <Chip label="Cantonese" variant="outlined" /> <Chip label="English (IELTS: 7.5)" variant="outlined" /> <Chip label="Mandarin" variant="outlined" />
-            </Typography>
-          </Stack>
+          {
+            skill.map((item) => {
+              return(
+                <SkillItem category={item.category} skill={item.skill} />
+              )
+            })
+          }
         <CustomButton text="Download CV" href={resume} />
         </Stack>
       </Stack>
