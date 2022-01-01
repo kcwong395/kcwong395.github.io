@@ -12,6 +12,7 @@ import Copyright from "./views/Copyright/Copyright";
 
 import './App.css';
 import ScrollTop from './components/ScrollTop';
+import Project from './views/Project/Project';
 
 
 const theme = createTheme({
@@ -58,6 +59,7 @@ function App() {
       <Home />
       <About />
       <Profile />
+      <Project />
       <Copyright />
       <ScrollTop />
     </ThemeProvider>
