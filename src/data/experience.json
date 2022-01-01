@@ -1,6 +1,6 @@
 [
   {
-    "organization": "Societe Generale",
+    "organization": "Societe Generale Corporate and Investment Banking",
     "period": "2021.09 - Present",
     "location": "Hong Kong",
     "header": "Software Engineer, Analyst | Compliance IT",
@@ -16,11 +16,11 @@
     "header": "System Engineer Trainee | Managed Digital Services",
     "info": [
       "Developed Ansible scripts and Jira workflows for automation in user requests [Ansible, AWX, Jira]",
-      "Collected application matrices for health check and performance visualization [Elastic Search, Grafana]"
+      "Collected application matrices for health check and data visualization [Elastic Search, Grafana]"
     ]
   },
   {
-    "organization": "Orient Overseas Container Line",
+    "organization": "Orient Overseas Container Line Limited",
     "period": "2020.06 - 2020.08",
     "location": "Hong Kong",
     "header": "Intern in Infrastructure Team | Information Services Department",

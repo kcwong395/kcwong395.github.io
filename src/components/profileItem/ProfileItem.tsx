@@ -1,6 +1,8 @@
 import React from 'react';
-import {Grid, Typography } from '@mui/material';
+import {Divider, Grid, Stack, Typography } from '@mui/material';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+import TimelineIcon from '@mui/icons-material/Timeline';
+import DoneOutlinedIcon from '@mui/icons-material/DoneOutlined';
 
 export default function ProfileItem(props: {
   organization: string, period: string, location: string, header: string, info: string[]
@@ -8,33 +10,43 @@ export default function ProfileItem(props: {
   return (
     <Grid container>
       <Grid item lg={4}>
-        <Grid container>
+        <Grid container spacing={1}>
           <Grid item xs={12}>
             <Typography variant="h5" component="div">{props.organization}</Typography>
           </Grid>
           <Grid item xs={6}>
-            <Typography variant="body1" component="div">{props.period}</Typography>
+            <Stack direction="row" spacing={0.5}>
+              <TimelineIcon />
+              <Typography variant="body1" component="div">{props.period}</Typography>
+            </Stack>
           </Grid>
           <Grid item xs={6} justifyContent="center">
-          <LocationOnOutlinedIcon />{props.location}
-        </Grid>
+            <Stack direction="row" spacing={0.5}>
+              <LocationOnOutlinedIcon />
+              <Typography variant="body1" component="div">{props.location}</Typography>
+            </Stack>
+          </Grid>
         </Grid>
       </Grid>
       <Grid item lg={8}>
-        <Grid container>
+        <Grid container spacing={{ xs: 2}}>
           <Grid item xs={12}>
             <Typography variant="h5" component="div">{props.header}</Typography>
           </Grid>
           <Grid item xs={12}>
-            <ul>
-              {
-                props.info.map((item) => {
-                  return(
-                    <li>{item}</li>
-                  )
-                })
-              }
-            </ul>
+            {
+              props.info.map((item) => {
+                return(
+                  <Stack direction="row" spacing={{ xs: 0.5 }}>
+                    <DoneOutlinedIcon />
+                    <Typography variant="body1" component="div">
+                      {item}
+                    </Typography>
+                  </Stack>
+
+                )
+              })
+            }
           </Grid>
         </Grid>
       </Grid>
