@@ -1,0 +1,23 @@
+[
+  {
+    "title": "HideNSeek",
+    "link": "kcwong395.github.io",
+    "source": "https://github.com/kcwong395/HideNSeek",
+    "info": "A SaaS Steganography tool to hide messages in images",
+    "stack": "[Python, Flask, Terraform, Docker, Azure, Circleci]"
+  },
+  {
+    "title": "Personal Portfolio",
+    "link": "kcwong395.github.io",
+    "source": "https://github.com/kcwong395/kcwong395.github.io",
+    "info": "Stay tuned for my latest updates on career and personal projects",
+    "stack": "[React, Material UI]"
+  },
+  {
+    "title": "Final Year Project",
+    "link": "kcwong395.github.io",
+    "source": "https://github.com/kcwong395/final-year-project",
+    "info": "Provided redundancy in distributed computing system using codes and web portal for computing node management, task monitoring",
+    "stack": "[Vue.js, Java, Spring Boot, Docker]"
+  }
+]
