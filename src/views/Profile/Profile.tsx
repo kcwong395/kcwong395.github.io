@@ -1,4 +1,4 @@
-import {Box, Container, Divider, Stack, Typography } from '@mui/material';
+import {Container, Divider, Stack, Typography } from '@mui/material';
 import React from 'react';
 import ProfileItem from '../../components/profileItem/ProfileItem';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
@@ -15,7 +15,6 @@ export default function Profile() {
       <Container>
         <Stack direction="column"
                spacing={{ xs: 6 }}
-               justifyContent="center"
                sx={{minHeight: "100vh", pt: 10, pb: 10}}
         >
           <Stack direction="column"

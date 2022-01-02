@@ -1,5 +1,5 @@
 import React from 'react';
-import {Divider, Grid, Stack, Typography } from '@mui/material';
+import {Grid, Stack, Typography } from '@mui/material';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import TimelineIcon from '@mui/icons-material/Timeline';
 import DoneOutlinedIcon from '@mui/icons-material/DoneOutlined';
