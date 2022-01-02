@@ -1,29 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.4f7a4d48.chunk.css",
-    "main.js": "/static/js/main.ec752c10.chunk.js",
-    "main.js.map": "/static/js/main.ec752c10.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.53c7b5a6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.53c7b5a6.js.map",
-    "static/css/2.69121389.chunk.css": "/static/css/2.69121389.chunk.css",
-    "static/js/2.f123b497.chunk.js": "/static/js/2.f123b497.chunk.js",
-    "static/js/2.f123b497.chunk.js.map": "/static/js/2.f123b497.chunk.js.map",
+    "main.css": "/static/css/main.41a28a4b.chunk.css",
+    "main.js": "/static/js/main.0b4b13e2.chunk.js",
+    "main.js.map": "/static/js/main.0b4b13e2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b6ffb354.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b6ffb354.js.map",
+    "static/js/2.85f6b3f4.chunk.js": "/static/js/2.85f6b3f4.chunk.js",
+    "static/js/2.85f6b3f4.chunk.js.map": "/static/js/2.85f6b3f4.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4da4dd0daabb6385e8fb0ebeb66e93a6.js": "/precache-manifest.4da4dd0daabb6385e8fb0ebeb66e93a6.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.69121389.chunk.css.map": "/static/css/2.69121389.chunk.css.map",
-    "static/css/main.4f7a4d48.chunk.css.map": "/static/css/main.4f7a4d48.chunk.css.map",
-    "static/js/2.f123b497.chunk.js.LICENSE.txt": "/static/js/2.f123b497.chunk.js.LICENSE.txt",
-    "static/media/Home.css": "/static/media/bg.16c40e2e.jpg",
-    "static/media/recent_pic.jpg": "/static/media/recent_pic.0b8cd1c0.jpg",
-    "static/media/resume.pdf": "/static/media/resume.629df1ad.pdf",
-    "static/media/index.css": "/static/media/somethingwild-Regular.1e28affa.otf"
+    "static/css/main.41a28a4b.chunk.css.map": "/static/css/main.41a28a4b.chunk.css.map",
+    "static/js/2.85f6b3f4.chunk.js.LICENSE.txt": "/static/js/2.85f6b3f4.chunk.js.LICENSE.txt",
+    "static/media/0.c6308b58.jpg": "/static/media/0.c6308b58.jpg",
+    "static/media/1.3f64c21e.jpg": "/static/media/1.3f64c21e.jpg",
+    "static/media/2.fad5fc0d.jpg": "/static/media/2.fad5fc0d.jpg",
+    "static/media/MartinWong_Resume.09746006.pdf": "/static/media/MartinWong_Resume.09746006.pdf",
+    "static/media/Home.css": "/static/media/background.db9bb420.jpg",
+    "static/media/recent_pic.f65cc970.jpg": "/static/media/recent_pic.f65cc970.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.53c7b5a6.js",
-    "static/css/2.69121389.chunk.css",
-    "static/js/2.f123b497.chunk.js",
-    "static/css/main.4f7a4d48.chunk.css",
-    "static/js/main.ec752c10.chunk.js"
+    "static/js/runtime-main.b6ffb354.js",
+    "static/js/2.85f6b3f4.chunk.js",
+    "static/css/main.41a28a4b.chunk.css",
+    "static/js/main.0b4b13e2.chunk.js"
   ]
 }
