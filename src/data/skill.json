@@ -1,0 +1,47 @@
+[
+  {
+    "category": "Frontend Design",
+    "skill": [
+      "React.js",
+      "Vue.js",
+      "Restful APIs",
+      "Postman"
+    ]
+  },
+  {
+    "category": "Backend Development",
+    "skill": [
+      "Java",
+      "SpringBoot",
+      "JUnit",
+      "Python",
+      "Flask"
+    ]
+  },
+  {
+    "category": "Database Management",
+    "skill": [
+      "Postgresql",
+      "MSsql",
+      "Mongodb",
+      "Redis"
+    ]
+  },
+  {
+    "category": "Infrastructure & CI/CD",
+    "skill": [
+      "Terraform",
+      "Docker",
+      "AWS",
+      "Azure"
+    ]
+  },
+  {
+    "category": "Language",
+    "skill": [
+      "Cantonese",
+      "English (IELTS: 7.5)",
+      "Mandarin"
+    ]
+  }
+]
