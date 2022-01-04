@@ -31,7 +31,7 @@ export default function Project() {
             />
             <Typography variant="body1" component="div"><i>The man who moves a mountain begins by carrying away small stones.</i></Typography>
           </Stack>
-          <Stack direction="row" justifyContent="space-around" spacing={{xs: 3}}>
+          <Stack direction={{ xs: 'column', lg: 'row' }} justifyContent="space-around" alignItems="center" spacing={{xs: 3}}>
             <ProjectItem title={projects[0].title} info={projects[0].info} stack={projects[0].stack}
                          link={projects[0].link} source={projects[0].source} path={icon0}
             />
