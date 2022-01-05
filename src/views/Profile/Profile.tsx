@@ -30,7 +30,7 @@ export default function Profile() {
                 width: 60,
               }}
             />
-            <Typography variant="body1" component="div"><i>Go confidently in the direction of your dreams. Live the life you have imagined.</i></Typography>
+            <Typography variant="body1" component="div" textAlign="center"><i>Go confidently in the direction of your dreams. Live the life you have imagined.</i></Typography>
           </Stack>
           <Stack direction="column" spacing={{ xs: 2 }}>
             <Stack direction="column" spacing={{ xs: 0.5 }}>

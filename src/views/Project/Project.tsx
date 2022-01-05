@@ -29,7 +29,7 @@ export default function Project() {
                 width: 60,
               }}
             />
-            <Typography variant="body1" component="div"><i>The man who moves a mountain begins by carrying away small stones.</i></Typography>
+            <Typography variant="body1" component="div" textAlign="center"><i>The man who moves a mountain begins by carrying away small stones.</i></Typography>
           </Stack>
           <Stack direction={{ xs: 'column', lg: 'row' }} justifyContent="space-around" alignItems="center" spacing={{xs: 3}}>
             <ProjectItem title={projects[0].title} info={projects[0].info} stack={projects[0].stack}
