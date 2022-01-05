@@ -5,7 +5,7 @@ import ContactBar from '../../components/contact/ContactBar';
 
 export default function Copyright(props: any) {
   return (
-    <Stack direction="row" justifyContent="space-evenly" alignItems="Center" sx={{ my: 4 }}>
+    <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} justifyContent="space-evenly" alignItems="Center" sx={{ my: 4 }}>
       <ContactBar />
       <Typography variant="body1" color="text.secondary" {...props}>
         {'Copyright © '}
