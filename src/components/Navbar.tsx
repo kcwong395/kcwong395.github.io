@@ -47,7 +47,7 @@ export default function Navbar() {
               </Typography>
             </Grid>
           </Grid>
-          <Grid item sx={{ display: { xs: 'none', lg: 'flex' } }}>
+          <Grid item sx={{ display: { xs: 'none', md: 'flex' } }}>
             <Stack direction="row" divider={<Divider orientation="vertical" flexItem />} spacing={{ xs: 4 }}>
               <Link href="#" underline="none">HOME</Link>
               <Link href="#about" underline="none">ABOUT ME</Link>
@@ -55,7 +55,7 @@ export default function Navbar() {
               <Link href="#project" underline="none">PROJECTS</Link>
             </Stack>
           </Grid>
-          <Grid item sx={{ display: { xs: 'flex', lg: 'none' } }}>
+          <Grid item sx={{ display: { xs: 'flex', md: 'none' } }}>
             <Box>
               <IconButton
                 size="large"
