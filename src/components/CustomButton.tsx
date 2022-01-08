@@ -25,7 +25,6 @@ export default function CustomButton(props: {
       variant="contained"
       size="large"
       className={classes.btn}
-      sx={{maxWidth: "620px"}}
     >
       {props.text}
     </Button>
