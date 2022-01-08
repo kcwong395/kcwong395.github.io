@@ -8,7 +8,11 @@ import Banner from '../../components/Banner'
 
 export default function Home() {
   return (
-    <Grid className={"Section-Home"} container
+    /*
+      TODO: adjust the position of photo
+    */
+    <Grid className={"Section-Home"}
+          container
           direction="column"
           justifyContent="space-between"
           sx={{ minHeight: "100vh" }}>
