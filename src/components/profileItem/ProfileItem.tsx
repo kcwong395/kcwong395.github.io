@@ -9,18 +9,18 @@ export default function ProfileItem(props: {
 }) {
   return (
     <Grid container>
-      <Grid item lg={4}>
+      <Grid item lg={4} xs={12} sx={{ pb: 2 }}>
         <Grid container spacing={1}>
           <Grid item xs={12}>
             <Typography variant="h5" component="div">{props.organization}</Typography>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={6} sm={5} md={3} lg={6}>
             <Stack direction="row" spacing={0.5}>
               <TimelineIcon />
               <Typography variant="body1" component="div">{props.period}</Typography>
             </Stack>
           </Grid>
-          <Grid item xs={6} justifyContent="center">
+          <Grid item xs={6} sm={5} md={3} lg={6}>
             <Stack direction="row" spacing={0.5}>
               <LocationOnOutlinedIcon />
               <Typography variant="body1" component="div">{props.location}</Typography>
@@ -28,8 +28,8 @@ export default function ProfileItem(props: {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item lg={8}>
-        <Grid container spacing={{ xs: 2}}>
+      <Grid item lg={8} xs={12} sx={{ pb: 2 }}>
+        <Grid container spacing={1}>
           <Grid item xs={12}>
             <Typography variant="h5" component="div">{props.header}</Typography>
           </Grid>
