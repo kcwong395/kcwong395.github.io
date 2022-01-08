@@ -2,10 +2,30 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import {Divider, Grid, Link, Stack} from "@mui/material";
+import MenuIcon from '@mui/icons-material/Menu';
+import {Box, Divider, Grid, IconButton, Link, Menu, MenuItem, Stack} from "@mui/material";
 import './Navbar.css';
 
 export default function Navbar() {
+
+  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
+  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
+
+  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElNav(event.currentTarget);
+  };
+  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElUser(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
+  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
+  };
+
   return (
     <AppBar
       className="navbar"
@@ -19,22 +39,66 @@ export default function Navbar() {
       }}
     >
       <Toolbar>
-        <Grid container alignItems="center">
-          <Grid item xs={5}>
+        <Grid container alignItems="center" justifyContent="space-evenly">
+          <Grid item>
             <Grid container justifyContent="space-evenly">
               <Typography variant="h5" component="div">
                 <Link href="#" underline="none" sx={{ my: 3 }}>Martin Wong</Link>
               </Typography>
             </Grid>
           </Grid>
-          <Grid item xs={2} />
-          <Grid item xs={5}>
+          <Grid item sx={{ display: { xs: 'none', lg: 'flex' } }}>
             <Stack direction="row" divider={<Divider orientation="vertical" flexItem />} spacing={{ xs: 4 }}>
               <Link href="#" underline="none">HOME</Link>
               <Link href="#about" underline="none">ABOUT ME</Link>
               <Link href="#profile" underline="none">PROFILE</Link>
               <Link href="#project" underline="none">PROJECTS</Link>
             </Stack>
+          </Grid>
+          <Grid item sx={{ display: { xs: 'flex', lg: 'none' } }}>
+            <Box>
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                sx={{ color: (theme) => `${theme.palette.primary.main}`}}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'left',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'left',
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{
+                  display: { xs: 'block', md: 'none' },
+                }}
+              >
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Link href="#" underline="none">HOME</Link>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Link href="#about" underline="none">ABOUT ME</Link>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Link href="#profile" underline="none">PROFILE</Link>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Link href="#project" underline="none">PROJECTS</Link>
+                </MenuItem>
+              </Menu>
+            </Box>
           </Grid>
         </Grid>
       </Toolbar>
