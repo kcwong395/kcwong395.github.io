@@ -32,36 +32,6 @@ export default function Profile() {
             />
             <Typography variant="body1" component="div" textAlign="center"><i>Go confidently in the direction of your dreams. Live the life you have imagined.</i></Typography>
           </Stack>
-          <Stack direction="column" spacing={{ xs: 2 }}>
-            <Stack direction="column" spacing={{ xs: 0.5 }}>
-              <Stack direction="row" spacing={{ xs: 1 }}>
-                <Typography variant="h4" component="div">Education</Typography><SchoolOutlinedIcon fontSize="large" />
-              </Stack>
-              <Divider
-                sx={{
-                  color: (theme) => `${theme.palette.secondary.main}`,
-                  backgroundColor: (theme) => `${theme.palette.secondary.main}`,
-                  height: 6,
-                  width: 60,
-                }}
-              />
-            </Stack>
-            <Stack direction="column" spacing={{xs: 3}}>
-              {
-                education.map((item) => {
-                  return(
-                    <ProfileItem
-                      organization={item.organization}
-                      period={item.period}
-                      location={item.location}
-                      header={item.header}
-                      info={item.info}
-                    />
-                  )
-                })
-              }
-            </Stack>
-          </Stack>
           <Stack direction="column" spacing={{ xs: 3 }}>
             <Stack direction="column" spacing={{ xs: 0.5 }}>
               <Stack direction="row" spacing={{ xs: 1 }}>
@@ -91,7 +61,37 @@ export default function Profile() {
                 })
               }
             </Stack>
+          </Stack>
 
+          <Stack direction="column" spacing={{ xs: 2 }}>
+            <Stack direction="column" spacing={{ xs: 0.5 }}>
+              <Stack direction="row" spacing={{ xs: 1 }}>
+                <Typography variant="h4" component="div">Education</Typography><SchoolOutlinedIcon fontSize="large" />
+              </Stack>
+              <Divider
+                sx={{
+                  color: (theme) => `${theme.palette.secondary.main}`,
+                  backgroundColor: (theme) => `${theme.palette.secondary.main}`,
+                  height: 6,
+                  width: 60,
+                }}
+              />
+            </Stack>
+            <Stack direction="column" spacing={{xs: 3}}>
+              {
+                education.map((item) => {
+                  return(
+                    <ProfileItem
+                      organization={item.organization}
+                      period={item.period}
+                      location={item.location}
+                      header={item.header}
+                      info={item.info}
+                    />
+                  )
+                })
+              }
+            </Stack>
           </Stack>
           <Stack direction="column" spacing={{ xs: 3 }}>
             <Stack direction="column" spacing={{ xs: 0.5 }}>
