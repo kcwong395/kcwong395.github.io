@@ -1,26 +1,33 @@
 import React from 'react';
 import {Container, Grid, Stack} from "@mui/material"
 
-import './Home.css'
-
 import ContactBar from '../../components/contact/ContactBar'
 import Banner from '../../components/Banner'
+
+import icon from '../../static/background.jpg'
 
 export default function Home() {
   return (
     /*
       TODO: adjust the position of photo
     */
-    <Grid className={"Section-Home"}
-          container
+    <Grid container
           direction="column"
           justifyContent="space-between"
-          sx={{ minHeight: "100vh" }}>
+          sx={{
+            minHeight: "100vh",
+            color: "white",
+            background: `linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(${icon})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: { xs:"30%", md: "center" }
+          }}
+    >
       <Grid item />
       <Grid item>
         <Container>
           <Grid container justifyContent={{ xs: "center", md: "flex-end" }}>
-            <Grid item sx={{ pb: 15 }}>
+            <Grid item sx={{ pb: { xs: 0, md: 15 } }}>
               <Banner />
             </Grid>
           </Grid>
