@@ -29,7 +29,10 @@ export default function About() {
         background: {
           xs: "white",
           lg: `linear-gradient(to right, #514644 0%, #514644 40%, white 40%, white 100%)`
-        }}}
+        },
+        pt: 10,
+        pb: 10
+      }}
       alignItems="center"
       justifyContent="center"
     >
