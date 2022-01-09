@@ -29,14 +29,17 @@ export default function About() {
         background: {
           xs: "white",
           lg: `linear-gradient(to right, #514644 0%, #514644 40%, white 40%, white 100%)`
-        }}}
+        },
+        pt: 10,
+        pb: 10
+      }}
       alignItems="center"
       justifyContent="center"
     >
       <ImageListItem
         sx={{
-          maxWidth: "55vh",
-          outline: (theme) => `10px solid ${theme.palette.background.paper}`
+          maxWidth: { xs: "40vh", md: "55vh" },
+          outline: (theme) => `10px solid ${theme.palette.primary.main}`
         }}>
         <img
           src={icon}
@@ -53,7 +56,7 @@ export default function About() {
             An Aspiring Recent Graduate Software Engineer
           </Typography>
           <Typography variant="body1" component="div">
-            Recent Graduate with strong academic background, exposure in banking industry and large MNC.
+            I am a Recent Graduate with strong academic background, exposure in banking industry and large MNC.
             Currently open to any coding-oriented opportunities and
             to work with teams having excellent practises such as TDD, Agile Methodology and high code review standard.
           </Typography>
