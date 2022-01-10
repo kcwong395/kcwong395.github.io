@@ -4,7 +4,7 @@ import {createTheme, ThemeProvider} from '@mui/material/styles';
 import {CssBaseline} from '@mui/material'
 
 // import views
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar/Navbar";
 import Home from './views/Home/Home'
 import About from "./views/About/About";
 import Profile from './views/Profile/Profile';
