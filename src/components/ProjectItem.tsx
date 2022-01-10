@@ -1,5 +1,5 @@
-import {Button, Card, CardActions, CardContent, CardMedia, Link, Stack, Typography } from '@mui/material';
-import React, { useState } from 'react';
+import {Button, Card, CardActions, CardContent, CardMedia, Stack, Typography } from '@mui/material';
+import React from 'react';
 
 export default function ProjectItem(props: {
   title: string, info: string, link: string, source: string, path: string, stack: string, isAvailable: boolean

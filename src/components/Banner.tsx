@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Box, Container, Grid, Grow, Stack, Typography} from "@mui/material";
+import {Grow, Stack, Typography} from "@mui/material";
 
 import CustomButton from "./CustomButton";
 import Typing from "../components/typing/Typing";
