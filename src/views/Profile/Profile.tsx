@@ -4,6 +4,7 @@ import ProfileItem from '../../components/profileItem/ProfileItem';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import WorkOutlineOutlinedIcon from '@mui/icons-material/WorkOutlineOutlined';
 import MilitaryTechOutlinedIcon from '@mui/icons-material/MilitaryTechOutlined';
+import CustomDivider from '../../components/CustomDivider';
 
 import education from '../../data/education.json';
 import experience from '../../data/experience.json';
@@ -22,14 +23,7 @@ export default function Profile() {
                  alignItems="center"
           >
             <Typography variant="h3" component="div">My Profile</Typography>
-            <Divider
-              sx={{
-                color: (theme) => `${theme.palette.secondary.main}`,
-                backgroundColor: (theme) => `${theme.palette.secondary.main}`,
-                height: 6,
-                width: 60,
-              }}
-            />
+            <CustomDivider />
             <Typography variant="body1" component="div" textAlign="center"><i>Go confidently in the direction of your dreams. Live the life you have imagined.</i></Typography>
           </Stack>
           <Stack direction="column" spacing={{ xs: 3 }}>
@@ -37,14 +31,7 @@ export default function Profile() {
               <Stack direction="row" spacing={{ xs: 1 }}>
                 <Typography variant="h4" component="div">Experience</Typography><WorkOutlineOutlinedIcon fontSize="large" />
               </Stack>
-              <Divider
-                sx={{
-                  color: (theme) => `${theme.palette.secondary.main}`,
-                  backgroundColor: (theme) => `${theme.palette.secondary.main}`,
-                  height: 6,
-                  width: 60,
-                }}
-              />
+              <CustomDivider />
             </Stack>
             <Stack direction="column" spacing={{xs: 3}}>
               {
@@ -68,14 +55,7 @@ export default function Profile() {
               <Stack direction="row" spacing={{ xs: 1 }}>
                 <Typography variant="h4" component="div">Education</Typography><SchoolOutlinedIcon fontSize="large" />
               </Stack>
-              <Divider
-                sx={{
-                  color: (theme) => `${theme.palette.secondary.main}`,
-                  backgroundColor: (theme) => `${theme.palette.secondary.main}`,
-                  height: 6,
-                  width: 60,
-                }}
-              />
+              <CustomDivider />
             </Stack>
             <Stack direction="column" spacing={{xs: 3}}>
               {
@@ -98,14 +78,7 @@ export default function Profile() {
               <Stack direction="row" spacing={{ xs: 1 }}>
                 <Typography variant="h4" component="div">Certifications</Typography><MilitaryTechOutlinedIcon fontSize="large" />
               </Stack>
-              <Divider
-                sx={{
-                  color: (theme) => `${theme.palette.secondary.main}`,
-                  backgroundColor: (theme) => `${theme.palette.secondary.main}`,
-                  height: 6,
-                  width: 60,
-                }}
-              />
+              <CustomDivider />
             </Stack>
             <Stack direction="column" spacing={{xs: 3}}>
               {

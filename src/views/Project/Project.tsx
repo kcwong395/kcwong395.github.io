@@ -1,6 +1,7 @@
 import {Container, Divider, Stack, Typography } from '@mui/material';
 import React from 'react';
 import ProjectItem from '../../components/ProjectItem';
+import CustomDivider from '../../components/CustomDivider';
 
 import projects from '../../data/project.json';
 
@@ -18,14 +19,7 @@ export default function Project() {
                  alignItems="center"
           >
             <Typography variant="h3" component="div">My Projects</Typography>
-            <Divider
-              sx={{
-                color: (theme) => `${theme.palette.secondary.main}`,
-                backgroundColor: (theme) => `${theme.palette.secondary.main}`,
-                height: 6,
-                width: 60,
-              }}
-            />
+            <CustomDivider />
             <Typography variant="body1" component="div" textAlign="center"><i>The man who moves a mountain begins by carrying away small stones.</i></Typography>
           </Stack>
           <Stack direction={{ xs: 'column', lg: 'row' }} justifyContent="space-around" alignItems="center" spacing={{xs: 3}}>
