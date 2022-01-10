@@ -5,7 +5,7 @@ import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import WorkOutlineOutlinedIcon from '@mui/icons-material/WorkOutlineOutlined';
 import MilitaryTechOutlinedIcon from '@mui/icons-material/MilitaryTechOutlined';
 import CustomDivider from '../../components/CustomDivider';
-
+import SectionHeader from '../../components/SectionHeader';
 import education from '../../data/education.json';
 import experience from '../../data/experience.json';
 import certification from '../../data/certification.json';
@@ -22,9 +22,10 @@ export default function Profile() {
                  spacing={{ xs: 1 }}
                  alignItems="center"
           >
-            <Typography variant="h3" component="div">My Profile</Typography>
-            <CustomDivider />
-            <Typography variant="body1" component="div" textAlign="center"><i>Go confidently in the direction of your dreams. Live the life you have imagined.</i></Typography>
+            <SectionHeader
+              title="My Profile"
+              describtion="Go confidently in the direction of your dreams. Live the life you have imagined"
+            />
           </Stack>
           <Stack direction="column" spacing={{ xs: 3 }}>
             <Stack direction="column" spacing={{ xs: 0.5 }}>
