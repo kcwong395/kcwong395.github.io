@@ -1,8 +1,8 @@
-import {Button, Card, CardActions, CardContent, CardMedia, Stack, Typography } from '@mui/material';
+import {Button, Card, CardActions, CardContent, CardMedia, Link, Stack, Typography } from '@mui/material';
 import React, { useState } from 'react';
 
 export default function ProjectItem(props: {
-  title: string, info: string, link: string, source: string, path: string, stack: string
+  title: string, info: string, link: string, source: string, path: string, stack: string, isAvailable: boolean
 }) {
 
   return (
@@ -27,8 +27,8 @@ export default function ProjectItem(props: {
         </Stack>
       </CardContent>
       <CardActions>
-        <a href={props.link} target="_blank"><Button size="small">Try It Out</Button></a>
-        <a href={props.source} target="_blank"><Button size="small">Source Code</Button></a>
+        <Button size="small" href={props.link} disabled={!props.isAvailable}>Try It Out</Button>
+        <Button size="small" href={props.source}>Source Code</Button>
       </CardActions>
     </Card>
   );

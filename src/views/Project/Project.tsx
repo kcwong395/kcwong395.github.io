@@ -33,13 +33,13 @@ export default function Project() {
           </Stack>
           <Stack direction={{ xs: 'column', lg: 'row' }} justifyContent="space-around" alignItems="center" spacing={{xs: 3}}>
             <ProjectItem title={projects[0].title} info={projects[0].info} stack={projects[0].stack}
-                         link={projects[0].link} source={projects[0].source} path={icon0}
+                         link={projects[0].link} source={projects[0].source} path={icon0} isAvailable={projects[0].isAvailable}
             />
             <ProjectItem title={projects[1].title} info={projects[1].info} stack={projects[1].stack}
-                         link={projects[1].link} source={projects[1].source} path={icon1}
+                         link={projects[1].link} source={projects[1].source} path={icon1} isAvailable={projects[1].isAvailable}
             />
             <ProjectItem title={projects[2].title} info={projects[2].info} stack={projects[2].stack}
-                         link={projects[2].link} source={projects[2].source} path={icon2}
+                         link={projects[2].link} source={projects[2].source} path={icon2} isAvailable={projects[2].isAvailable}
             />
           </Stack>
         </Stack>
