@@ -3,9 +3,6 @@ import React from 'react';
 import ProjectItem from '../../components/ProjectItem';
 
 import projects from '../../data/project.json';
-import icon0 from '../../static/project/0.jpg';
-import icon1 from '../../static/project/1.jpg';
-import icon2 from '../../static/project/2.jpg';
 
 export default function Project() {
   return (
@@ -32,15 +29,16 @@ export default function Project() {
             <Typography variant="body1" component="div" textAlign="center"><i>The man who moves a mountain begins by carrying away small stones.</i></Typography>
           </Stack>
           <Stack direction={{ xs: 'column', lg: 'row' }} justifyContent="space-around" alignItems="center" spacing={{xs: 3}}>
-            <ProjectItem title={projects[0].title} info={projects[0].info} stack={projects[0].stack}
-                         link={projects[0].link} source={projects[0].source} path={icon0} isAvailable={projects[0].isAvailable}
-            />
-            <ProjectItem title={projects[1].title} info={projects[1].info} stack={projects[1].stack}
-                         link={projects[1].link} source={projects[1].source} path={icon1} isAvailable={projects[1].isAvailable}
-            />
-            <ProjectItem title={projects[2].title} info={projects[2].info} stack={projects[2].stack}
-                         link={projects[2].link} source={projects[2].source} path={icon2} isAvailable={projects[2].isAvailable}
-            />
+            {
+              projects.map((project) => {
+                return(
+                  <ProjectItem title={project.title} info={project.info} stack={project.stack}
+                               link={project.link} source={project.source} path={project.path}
+                               isAvailable={project.isAvailable}
+                  />
+                )
+              })
+            }
           </Stack>
         </Stack>
       </Container>
