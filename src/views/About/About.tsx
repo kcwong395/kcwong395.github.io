@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Box, ImageListItem, Stack, Typography, Container} from "@mui/material";
+import {ImageListItem, Stack, Typography, Container} from "@mui/material";
 import icon from '../../static/recent_pic.jpg';
 
 import CustomButton from '../../components/CustomButton';
