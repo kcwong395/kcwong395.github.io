@@ -6,8 +6,6 @@ import icon from '../../static/recent_pic.jpg';
 import CustomButton from '../../components/CustomButton';
 import SkillItem from '../../components/skill/SkillItem';
 
-// @ts-ignore
-import resume from '../../static/MartinWong_Resume.pdf';
 import skill from '../../data/skill.json';
 
 export default function About() {
@@ -67,7 +65,7 @@ export default function About() {
               )
             })
           }
-          <CustomButton text="Download CV" href={resume} />
+          <CustomButton text="Download CV" href="./MartinWong_Resume.pdf" />
         </Stack>
       </Container>
     </Stack>
