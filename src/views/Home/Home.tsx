@@ -8,7 +8,9 @@ import icon from '../../static/background.jpg'
 
 export default function Home() {
   return (
-    <Grid container
+    <Grid
+      id={'home'}
+      container
       direction="column"
       justifyContent="space-between"
       sx={{
