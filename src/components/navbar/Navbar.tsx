@@ -3,7 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
-import {Box, Divider, Grid, IconButton, Link, Menu, MenuItem, Stack} from "@mui/material";
+import {Box, Button, Divider, Grid, IconButton, Link, Menu, MenuItem, Stack} from "@mui/material";
 import './Navbar.css';
 
 export default function Navbar() {
@@ -16,6 +16,19 @@ export default function Navbar() {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+  };
+
+  const handleClick = (event: React.MouseEvent<HTMLElement>, dest: string) => {
+    const anchor = (
+      (event.target as HTMLDivElement).ownerDocument || document
+    ).querySelector(dest);
+
+    if (anchor) {
+      anchor.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
   };
 
   return (
@@ -35,16 +48,16 @@ export default function Navbar() {
           <Grid item>
             <Grid container justifyContent="space-evenly">
               <Typography variant="h5" component="div">
-                <Link href="#" underline="none" sx={{ my: 3 }}>Martin Wong</Link>
+                <Link underline="none" component="button" onClick={(evt) => handleClick(evt, "#home")} sx={{ typography: "h5" }}>Martin Wong</Link>
               </Typography>
             </Grid>
           </Grid>
           <Grid item sx={{ display: { xs: 'none', md: 'flex' } }}>
             <Stack direction="row" divider={<Divider orientation="vertical" flexItem />} spacing={{ xs: 4 }}>
-              <Link href="#" underline="none">HOME</Link>
-              <Link href="#about" underline="none">ABOUT ME</Link>
-              <Link href="#profile" underline="none">PROFILE</Link>
-              <Link href="#project" underline="none">PROJECTS</Link>
+              <Link underline="none" component="button" onClick={(evt) => handleClick(evt, "#home")} sx={{ typography: "h6", fontSize: 16 }}>HOME</Link>
+              <Link underline="none" component="button" onClick={(evt) => handleClick(evt, "#about")} sx={{ typography: "h6", fontSize: 16 }}>ABOUT ME</Link>
+              <Link underline="none" component="button" onClick={(evt) => handleClick(evt, "#profile")} sx={{ typography: "h6", fontSize: 16 }}>PROFILE</Link>
+              <Link underline="none" component="button" onClick={(evt) => handleClick(evt, "#project")} sx={{ typography: "h6", fontSize: 16 }}>PROJECTS</Link>
             </Stack>
           </Grid>
           <Grid item sx={{ display: { xs: 'flex', md: 'none' } }}>
@@ -78,16 +91,16 @@ export default function Navbar() {
                 }}
               >
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Link href="#" underline="none">HOME</Link>
+                  <Link underline="none" component="button" onClick={(evt) => handleClick(evt, "#home")} sx={{ typography: "h6", fontSize: 14 }}>HOME</Link>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Link href="#about" underline="none">ABOUT ME</Link>
+                  <Link underline="none" component="button" onClick={(evt) => handleClick(evt, "#about")} sx={{ typography: "h6", fontSize: 14 }}>ABOUT ME</Link>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Link href="#profile" underline="none">PROFILE</Link>
+                   <Link underline="none" component="button" onClick={(evt) => handleClick(evt, "#profile")} sx={{ typography: "h6", fontSize: 14 }}>PROFILE</Link>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Link href="#project" underline="none">PROJECTS</Link>
+                  <Link underline="none" component="button" onClick={(evt) => handleClick(evt, "#project")} sx={{ typography: "h6", fontSize: 14 }}>PROJECTS</Link>
                 </MenuItem>
               </Menu>
             </Box>
