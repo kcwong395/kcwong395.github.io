@@ -5,8 +5,10 @@
     "location": "Hong Kong",
     "header": "Software Engineer, Analyst | Compliance IT",
     "info": [
-      "Developed digitalization projects including web portal and raw data processing [Python, Flask]",
-      "Maintained Trade Surveillance project including BAU, system upgrade [Spring Boot, Postgresql]"
+      "Developed and maintained digitalization apps to ease the operation of compliance team [Spring Boot, Flask]",
+      "Provided application support such as BAU, feature enhancements, bug analysis and fixing [SQL, scripting]",
+      "Spearheaded the frontend backend separation and prepared POC demo [React, Typescript, Bootstrap]",
+      "Collaborated with internal teams including business users, frontend team, db admins and support team"
     ]
   },
   {
@@ -15,8 +17,8 @@
     "location": "Hong Kong",
     "header": "System Engineer Trainee | Managed Digital Services",
     "info": [
-      "Developed Ansible scripts and Jira workflows for automation in user requests [Ansible, AWX, Jira]",
-      "Collected application matrices for health check and data visualization [Elastic Search, Grafana]"
+      "Facilitated user requests automation and resource provisioning using Ansible, Jira workflows [Ansible, AWX]",
+      "Built dashboards for operation management with performance metrics alerts and visualization [ELK, Grafana]"
     ]
   },
   {
