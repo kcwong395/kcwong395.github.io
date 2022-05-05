@@ -51,12 +51,12 @@ export default function About() {
             Martin WONG
           </Typography>
           <Typography variant="h6" component="div">
-            An Aspiring Recent Graduate Software Engineer
+            A Passionate Software Engineer
           </Typography>
           <Typography variant="body1" component="div">
-            I am a Recent Graduate with strong academic background, exposure in banking industry and large MNC.
-            Currently open to any coding-oriented opportunities and
-            to work with teams having excellent practises such as TDD, Agile Methodology and high code review standard.
+            Passionate Candidate graduated with First Class Honours, work exposure in Multinational Corporation.
+            I work closely with full software development life cycle with experience in Backend Development and DevOps.
+            I am legally entitled to work in Canada, and currently seeking for any opportunities available in Canada.
           </Typography>
           {
             skill.map((item) => {
