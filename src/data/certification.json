@@ -1,11 +1,20 @@
 [
   {
+    "organization": "IELTS",
+    "period": "2021.11 - 2023.11",
+    "location": "Hong Kong",
+    "header": "IELTS - Academic",
+    "info": [
+      "Overall Band score: 7.5 (Listening: 8.0, Reading: 8.5, Writing: 7.0, Speaking: 6.5)"
+    ]
+  },
+  {
     "organization": "Amazon Web Services",
     "period": "2021.06 - 2024.06",
     "location": "Hong Kong",
     "header": "AWS Certified Cloud Practitioner",
     "info": [
-      "Pass with score (821 / 1000)"
+      "Pass with score: 821 / 1000"
     ]
   }
 ]

@@ -23,7 +23,7 @@ export default function Banner() {
         </Typography>
         <Stack direction={{ xs: 'column', md: 'row' }} spacing={{ xs: 0.5 }}>
           <Typography variant="body1" component="div">
-            Recent graduate seeking for challenges in
+            Passionate Candidate seeking for challenges in
           </Typography>
           <Typography variant="body1" component="div" sx={{ color: (theme) => `${theme.palette.primary.main}` }}>
             <strong><i><Typing /></i></strong>

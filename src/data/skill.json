@@ -3,6 +3,7 @@
     "category": "Frontend Design",
     "skill": [
       "React.js",
+      "Next.js",
       "Vue.js",
       "Restful APIs",
       "Postman"
@@ -13,9 +14,20 @@
     "skill": [
       "Java",
       "SpringBoot",
+      "Maven",
       "JUnit",
       "Python",
       "Flask"
+    ]
+  },
+  {
+    "category": "Infrastructure & CI/CD",
+    "skill": [
+      "Terraform",
+      "Kubernetes",
+      "Docker",
+      "AWS",
+      "Azure"
     ]
   },
   {
@@ -25,15 +37,6 @@
       "MSsql",
       "Mongodb",
       "Redis"
-    ]
-  },
-  {
-    "category": "Infrastructure & CI/CD",
-    "skill": [
-      "Terraform",
-      "Docker",
-      "AWS",
-      "Azure"
     ]
   },
   {
