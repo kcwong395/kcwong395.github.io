@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Divider, Typography} from "@mui/material";
+import {Typography} from "@mui/material";
 import CustomDivider from './CustomDivider';
 
 export default function SectionHeader(props: { title: string, describtion: string } ) {
