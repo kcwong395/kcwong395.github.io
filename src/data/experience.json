@@ -4,6 +4,7 @@
     "period": "2021.09 - Present",
     "location": "Hong Kong",
     "header": "Software Engineer, Analyst",
+    "stack": "Java, Spring Boot, JPA, Swagger, Python, Flask, MSSQL, Postgresql, React, Bootstrap",
     "info": [
       "Delivered and maintained digitalization projects managed by Version Control and Agile Methodology",
       "Responsible for resolving major incidents that block the operation of user-facing services promptly",
@@ -18,6 +19,7 @@
     "period": "2020.09 - 2021.04",
     "location": "Hong Kong",
     "header": "System Engineer Trainee",
+    "stack": "Automation (Ansible, AWX, Jira), Data Visualization (Logstash, Elasticsearch, Grafana)",
     "info": [
       "Facilitated 4+ solutions for backup, service monitoring, report generation, resource provisioning",
       "Constructed data flow pipelines to gather operating status and system metrics from applications",
@@ -29,6 +31,7 @@
     "period": "2020.06 - 2020.08",
     "location": "Hong Kong",
     "header": "Intern in Infrastructure Team",
+    "stack": "O365, Power Automate, Azure Cloud, Powershell",
     "info": [
       "Implemented solutions to meet business needs and smoothened the daily operations",
       "Developed and deployed PowerShell scripts to conduct tasks on 50+ remote servers"

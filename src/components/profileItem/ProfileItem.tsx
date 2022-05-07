@@ -3,9 +3,10 @@ import {Grid, Stack, Typography } from '@mui/material';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import TimelineIcon from '@mui/icons-material/Timeline';
 import DoneOutlinedIcon from '@mui/icons-material/DoneOutlined';
+import {GradeOutlined} from "@mui/icons-material";
 
 export default function ProfileItem(props: {
-  organization: string, period: string, location: string, header: string, info: string[]
+  organization: string, period: string, location: string, header: string, stack?: string, info: string[]
 }) {
   return (
     <Grid container>
@@ -34,19 +35,29 @@ export default function ProfileItem(props: {
             <Typography variant="h5" component="div">{props.header}</Typography>
           </Grid>
           <Grid item xs={12}>
-            {
-              props.info.map((item) => {
-                return(
-                  <Stack direction="row" spacing={{ xs: 0.5 }}>
-                    <DoneOutlinedIcon />
-                    <Typography variant="body1" component="div">
-                      {item}
-                    </Typography>
-                  </Stack>
-
-                )
-              })
-            }
+            <Stack spacing={{ xs: 0.8 }}>
+              {
+                props.stack &&
+                <Stack direction="row" spacing={{ xs: 0.8 }}>
+                  <GradeOutlined />
+                  <Typography variant="body1" component="div">
+                    <i><b>{props.stack}</b></i>
+                  </Typography>
+                </Stack>
+              }
+              {
+                props.info.map((item) => {
+                  return(
+                    <Stack direction="row" spacing={{ xs: 0.8 }}>
+                      <DoneOutlinedIcon />
+                        <Typography variant="body1" component="div">
+                          {item}
+                        </Typography>
+                    </Stack>
+                  )
+                })
+              }
+            </Stack>
           </Grid>
         </Grid>
       </Grid>

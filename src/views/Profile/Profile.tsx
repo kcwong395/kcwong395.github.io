@@ -43,6 +43,7 @@ export default function Profile() {
                       period={item.period}
                       location={item.location}
                       header={item.header}
+                      stack={item.stack}
                       info={item.info}
                     />
                   )
