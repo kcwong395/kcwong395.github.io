@@ -54,10 +54,8 @@ export default function About() {
             A Passionate Software Engineer
           </Typography>
           <Typography variant="body1" component="div">
-            Passionate Candidate graduated with First Class Honours, work exposure in Multinational Corporation.
-
-            I work closely with full software development life cycle with experience in Backend Development and DevOps.
-            I am legally entitled to work in Canada, and currently seeking for any opportunities available in Canada.
+            Martin works closely with full software development life cycle with experience in Backend Development and DevOps.
+            He is legally entitled to work in Canada, and currently seeking for any opportunities available in Canada.
           </Typography>
           {
             skill.map((item) => {
