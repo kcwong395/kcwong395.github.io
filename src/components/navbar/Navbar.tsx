@@ -3,7 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
-import {Box, Button, Divider, Grid, IconButton, Link, Menu, MenuItem, Stack} from "@mui/material";
+import {Box, Divider, Grid, IconButton, Link, Menu, MenuItem, Stack} from "@mui/material";
 import './Navbar.css';
 
 export default function Navbar() {

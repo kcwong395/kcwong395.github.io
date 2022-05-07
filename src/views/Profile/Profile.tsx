@@ -1,4 +1,4 @@
-import {Container, Divider, Stack, Typography } from '@mui/material';
+import {Container, Stack, Typography } from '@mui/material';
 import React from 'react';
 import ProfileItem from '../../components/profileItem/ProfileItem';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
