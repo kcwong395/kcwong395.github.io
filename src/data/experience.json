@@ -1,34 +1,37 @@
 [
   {
-    "organization": "Societe Generale Corporate and Investment Banking",
+    "organization": "Societe Generale",
     "period": "2021.09 - Present",
     "location": "Hong Kong",
-    "header": "Software Engineer, Analyst | Compliance IT",
+    "header": "Software Engineer, Analyst",
     "info": [
-      "Developed digitalization apps to ease the operation of compliance team [Spring Boot, Flask]",
-      "Provided application support including BAU, feature enhancements, bug analysis and fixing [SQL]",
-      "Spearheaded the frontend backend separation and prepared POC demo [React, Typescript, Bootstrap]",
-      "Collaborated with internal teams including business users, frontend team, db admins and support team"
+      "Delivered and maintained digitalization projects managed by Version Control and Agile Methodology",
+      "Responsible for resolving major incidents that block the operation of user-facing services promptly",
+      "Extended existing frontend with new functionalities and prepared POC using modern web frameworks",
+      "Provided application support on data extract, system upgrades,feature enhancements and rollout",
+      "Collaborated with teams to conduct UAT, requirement gathering, data validation, and present solutions",
+      "Hosted application onboarding, technical sharing and hands-on training sessions to the team"
     ]
   },
   {
     "organization": "Macroview Telecom Limited",
     "period": "2020.09 - 2021.04",
     "location": "Hong Kong",
-    "header": "System Engineer Trainee | Managed Digital Services",
+    "header": "System Engineer Trainee",
     "info": [
-      "Facilitated user requests automation and resource provisioning using Ansible, Jira [Ansible, AWX]",
-      "Built dashboards for management with performance metrics alerts and visualization [ELK, Grafana]"
+      "Facilitated 4+ solutions for backup, service monitoring, report generation, resource provisioning",
+      "Constructed data flow pipelines to gather operating status and system metrics from applications",
+      "Built performance visualization dashboards and configurated alert rules to trigger notifications"
     ]
   },
   {
-    "organization": "Orient Overseas Container Line Limited",
+    "organization": "Orient Overseas Container Line",
     "period": "2020.06 - 2020.08",
     "location": "Hong Kong",
-    "header": "Intern in Infrastructure Team | Information Services Department",
+    "header": "Intern in Infrastructure Team",
     "info": [
-      "Implemented solutions to meet business needs and smoothened the daily operations [O365, Azure]",
-      "Developed and deployed PowerShell scripts to conduct tasks on 50+ remote servers [Powershell]"
+      "Implemented solutions to meet business needs and smoothened the daily operations",
+      "Developed and deployed PowerShell scripts to conduct tasks on 50+ remote servers"
     ]
   }
 ]
