@@ -4,7 +4,6 @@
     "skill": [
       "React.js",
       "Next.js",
-      "Vue.js",
       "Restful APIs",
       "Postman"
     ]
@@ -14,7 +13,6 @@
     "skill": [
       "Java",
       "SpringBoot",
-      "Maven",
       "JUnit",
       "Python",
       "Flask"
@@ -26,8 +24,7 @@
       "Terraform",
       "Kubernetes",
       "Docker",
-      "AWS",
-      "Azure"
+      "AWS"
     ]
   },
   {
