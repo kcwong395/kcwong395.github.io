@@ -1,7 +1,22 @@
 [
   {
+    "organization": "Kijiji Canada",
+    "period": "2022.10 - Present",
+    "location": "Toronto, Canada",
+    "header": "Software Engineer",
+    "stack": "Java, Spring, MySQL, GCP, Marathon, Grafana, Github Actions, Jenkins",
+    "info": [
+      "Collaborated with non-technical stakeholders to deliver greenfield monetization features",
+      "Developed cloud native microservices by leveraging gcp cloud services: cloud run, pubSub",
+      "Participated in on-call rotation, mitigated critical production issues across the large-scale system",
+      "Monitored and maintained APIs by consistently reviewing the performance: call latency and error rate",
+      "Ensured robustness of codebase with unit tests, integration tests under enforced code coverage policy",
+      "Integrated external service provider Cloudinary to support new feature workflows on video operations"
+    ]
+  },
+  {
     "organization": "Societe Generale",
-    "period": "2021.09 - Present",
+    "period": "2021.09 - 2022.07",
     "location": "Hong Kong",
     "header": "Software Engineer, Analyst",
     "stack": "Java, Spring Boot, JPA, Swagger, Python, Flask, MSSQL, Postgresql, React, Bootstrap",
