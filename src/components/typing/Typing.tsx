@@ -14,7 +14,7 @@ export default function Typing() {
         'Web Technology',
         'Cloud Transformation',
         'Backend Development',
-        'Large-scale Distributed System'
+        'Large-scale System'
       ],
       typeSpeed: 50,
       backSpeed: 50,
