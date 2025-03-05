@@ -50,12 +50,9 @@ export default function About() {
           <Typography variant="h4" component="div">
             Martin WONG
           </Typography>
-          <Typography variant="h6" component="div">
-            A Passionate Software Engineer
-          </Typography>
           <Typography variant="body1" component="div">
-            Martin works closely with full software development life cycle with experience in Backend Development and DevOps.
-            He is legally entitled to work in Canada, and currently seeking for any opportunities available in Canada.
+            Martin is a Software Engineer with 3+ years of experience in developing scalable, high-performance backend APIs.
+            He is legally entitled to work in Canada, and no work permit sponsorship is required.
           </Typography>
           {
             skill.map((item) => {

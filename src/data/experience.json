@@ -1,17 +1,16 @@
 [
   {
     "organization": "Kijiji Canada",
-    "period": "2022.10 - Present",
+    "period": "2022.10 - 2024.12",
     "location": "Toronto, Canada",
-    "header": "Software Engineer",
-    "stack": "Java, Spring, MySQL, GCP, Marathon, Grafana, Github Actions, Jenkins",
+    "header": "Software Developer, Product Development",
+    "stack": "Java, Spring, Dropwizard, MySQL, Cloudrun, GCP, Apigee, Firestore, Grafana, Github Actions",
     "info": [
-      "Collaborated with non-technical stakeholders to deliver greenfield monetization features",
-      "Developed cloud native microservices by leveraging gcp cloud services: cloud run, pubSub",
-      "Participated in on-call rotation, mitigated critical production issues across the large-scale system",
-      "Monitored and maintained APIs by consistently reviewing the performance: call latency and error rate",
-      "Ensured robustness of codebase with unit tests, integration tests under enforced code coverage policy",
-      "Integrated external service provider Cloudinary to support new feature workflows on video operations"
+      "Collaborated with non-technical stakeholders to deliver greenfield monetization features on google cloud platform",
+      "Participated in on-call rotation, mitigated critical production incidents across the platform within the SLA",
+      "Monitored and maintained APIs by consistently reviewing call latency and error rate in dashboards",
+      "Integrated external service provider Cloudinary for video storage and upload, enabling new product workflows",
+      "Regularly conducted peer code reviews, performed pair programming to guide team members"
     ]
   },
   {
@@ -21,12 +20,12 @@
     "header": "Software Engineer, Analyst",
     "stack": "Java, Spring Boot, JPA, Swagger, Python, Flask, MSSQL, Postgresql, React, Bootstrap",
     "info": [
-      "Delivered and maintained digitalization projects managed by Version Control and Agile Methodology",
-      "Responsible for resolving major incidents that block the operation of user-facing services promptly",
-      "Extended existing frontend with new functionalities and prepared POC using modern web frameworks",
-      "Provided application support on data extract, system upgrades,feature enhancements and rollout",
-      "Collaborated with teams to conduct UAT, requirement gathering, data validation, and present solutions",
-      "Hosted application onboarding, technical sharing and hands-on training sessions to the team"
+      "Developed compliance-related Python web applications, preventing potential loss due to compliance breaches",
+      "Acted as SME of a core Java application, and was responsible for features enhancement and documentations",
+      "Constructed test cases and achieved 85% test coverage in one of the featured projects",
+      "Provided application support on data extract requests, system upgrades, resolved major incidents reported",
+      "Led UAT sessions, gathered requirements, and presented technical solutions to stakeholders",
+      "Conducted onboarding, technical sharing, and knowledge transfer sessions to upskill new team members"
     ]
   },
   {
@@ -36,16 +35,16 @@
     "header": "System Engineer Trainee",
     "stack": "Automation (Ansible, AWX, Jira), Data Visualization (Logstash, Elasticsearch, Grafana)",
     "info": [
-      "Facilitated 4+ solutions for backup, service monitoring, report generation, resource provisioning",
-      "Constructed data flow pipelines to gather operating status and system metrics from applications",
-      "Built performance visualization dashboards and configurated alert rules to trigger notifications"
+      "Facilitated 4+ automation solutions for backup, service monitoring, report generation, resource provisioning",
+      "Designed ETL pipelines to extract and transfer system metrics, enhancing data analytics capabilities",
+      "Built performance visualization dashboards and configured automated notification alert rules"
     ]
   },
   {
     "organization": "Orient Overseas Container Line",
     "period": "2020.06 - 2020.08",
     "location": "Hong Kong",
-    "header": "Intern in Infrastructure Team",
+    "header": "Intern, Infrastructure",
     "stack": "O365, Power Automate, Azure Cloud, Powershell",
     "info": [
       "Implemented solutions to meet business needs and smoothened the daily operations",
