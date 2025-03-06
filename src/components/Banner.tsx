@@ -29,7 +29,7 @@ export default function Banner() {
             <strong><i><Typing /></i></strong>
           </Typography>
         </Stack>
-        <CustomButton text="Read More" href="#about" />
+        <CustomButton text="Read More" href="#aboutme" />
       </Stack>
     </Grow>
   );
