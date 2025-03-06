@@ -7,7 +7,7 @@ import projects from '../../data/project.json';
 
 export default function Project() {
   return (
-    <Stack id={'project'} sx={{background: "rgb(255, 255, 255)"}}>
+    <Stack id={'projects'} sx={{background: "rgb(255, 255, 255)"}}>
       <Container>
         <Stack direction="column"
                spacing={{ xs: 6 }}

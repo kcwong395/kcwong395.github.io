@@ -19,7 +19,7 @@ export default function About() {
       TODO: color should not hard code here
      */
     <Stack
-      id={'about'}
+      id={'aboutme'}
       direction={{xs: "column", lg: "row"}}
       spacing={10}
       sx={{

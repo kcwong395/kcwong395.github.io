@@ -2,21 +2,11 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import MenuIcon from '@mui/icons-material/Menu';
-import {Box, Divider, Grid, IconButton, Link, Menu, MenuItem, Stack} from "@mui/material";
+import {Divider, Grid, Link, Stack} from "@mui/material";
+import Menu from './Menu'
 import './Navbar.css';
 
 export default function Navbar() {
-
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
 
   const handleClick = (event: React.MouseEvent<HTMLElement>, dest: string) => {
     const anchor = (
@@ -52,58 +42,21 @@ export default function Navbar() {
               </Typography>
             </Grid>
           </Grid>
+          {/* navbar shows only in large screen */}
           <Grid item sx={{ display: { xs: 'none', md: 'flex' } }}>
             <Stack direction="row" divider={<Divider orientation="vertical" flexItem />} spacing={{ xs: 4 }}>
-              <Link underline="none" component="button" onClick={(evt) => handleClick(evt, "#home")} sx={{ typography: "h6", fontSize: 16 }}>HOME</Link>
-              <Link underline="none" component="button" onClick={(evt) => handleClick(evt, "#about")} sx={{ typography: "h6", fontSize: 16 }}>ABOUT ME</Link>
-              <Link underline="none" component="button" onClick={(evt) => handleClick(evt, "#profile")} sx={{ typography: "h6", fontSize: 16 }}>PROFILE</Link>
-              <Link underline="none" component="button" onClick={(evt) => handleClick(evt, "#project")} sx={{ typography: "h6", fontSize: 16 }}>PROJECTS</Link>
+              {
+                ['HOME', 'ABOUT ME', 'PROFILE', 'PROJECTS'].map((item) => {
+                  return(
+                      <Link underline="none" component="button" onClick={(evt) => handleClick(evt, "#".concat(item.replaceAll(" ", "").toLowerCase()))} sx={{ typography: "h6", fontSize: 16 }}>{item}</Link>
+                  )
+                })
+              }
             </Stack>
           </Grid>
+          {/* menu shows only in small screen */}
           <Grid item sx={{ display: { xs: 'flex', md: 'none' } }}>
-            <Box>
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                sx={{ color: (theme) => `${theme.palette.primary.main}`}}
-              >
-                <MenuIcon />
-              </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: 'bottom',
-                  horizontal: 'left',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'left',
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
-                sx={{
-                  display: { xs: 'block', md: 'none' },
-                }}
-              >
-                <MenuItem onClick={handleCloseNavMenu}>
-                  <Link underline="none" component="button" onClick={(evt) => handleClick(evt, "#home")} sx={{ typography: "h6", fontSize: 14 }}>HOME</Link>
-                </MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}>
-                  <Link underline="none" component="button" onClick={(evt) => handleClick(evt, "#about")} sx={{ typography: "h6", fontSize: 14 }}>ABOUT ME</Link>
-                </MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}>
-                   <Link underline="none" component="button" onClick={(evt) => handleClick(evt, "#profile")} sx={{ typography: "h6", fontSize: 14 }}>PROFILE</Link>
-                </MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}>
-                  <Link underline="none" component="button" onClick={(evt) => handleClick(evt, "#project")} sx={{ typography: "h6", fontSize: 14 }}>PROJECTS</Link>
-                </MenuItem>
-              </Menu>
-            </Box>
+            <Menu />
           </Grid>
         </Grid>
       </Toolbar>
